@@ -1,4 +1,10 @@
-Happy Thursday!
+---
+image: '/img/headshot.jpg'
+---
+
+work on the [web](/areas/web);<br/>
+enjoying [adventure](/areas/adventure);<br/>
+explore [creatively](/areas/creative);<br/>
 
 - lives in San Francisco
     - grew up here
@@ -15,3 +21,5 @@ Happy Thursday!
     - video
     - sculpture
     - music
+
+

@@ -1,0 +1,7 @@
+{
+  "useMarkdownLinks": true,
+  "attachmentFolderPath": "public/attachments",
+  "userIgnoreFilters": [
+    "node_modules/"
+  ]
+}
