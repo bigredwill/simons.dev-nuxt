@@ -25,6 +25,9 @@
               <SvgoKeyboard />Currently working as a freelance software engineer.
             </p>
             <p>
+              <SvgoKeyboard />Taking a UI/UX design course through <a href="https://designlab.com/">DesignLab</a>
+            </p>
+            <p>
               <SvgoFrame />Looking for full-time work! Frontend and Full-stack software engineering positions.
             </p>
             <p>
