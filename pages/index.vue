@@ -25,7 +25,7 @@
               <SvgoKeyboard />Currently working as a freelance software engineer.
             </p>
             <p>
-              <SvgoKeyboard />Taking a UI/UX design course through <a href="https://designlab.com/">DesignLab</a>
+              <SvgoKeyboard /><span>Taking a UI/UX design course through <a href="https://designlab.com/">DesignLab</a></span>
             </p>
             <p>
               <SvgoFrame />Looking for full-time work! Frontend and Full-stack software engineering positions.
@@ -81,6 +81,10 @@ main {
   height: auto;
   text-align: left;
   color: var(--light);
+}
+
+.now-text a {
+  color: inherit;
 }
 
 section {
