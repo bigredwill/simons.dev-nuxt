@@ -133,30 +133,3 @@ main {
   }
 }
 </style>
-
-<style>
-:root {
-  --background-color: #A5C9E0;
-}
-
-html {
-  font-size: 11px;
-}
-
-body {
-  font-family: DepartureMono-Regular;
-  font-size: calc(11px + 0.390625vw);
-  /* background-color: var(--background-color); */
-  margin: 0;
-  background: linear-gradient(var(--background-color) 400px, rgb(123, 167, 229));
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-}
-
-p,
-ul,
-li {
-  /* font-size: 2rem; */
-}
-</style>

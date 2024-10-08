@@ -1,10 +1,23 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxt/content'],
-
+  modules: ['@nuxt/content', 'nuxt-svgo'],
+  svgo: {
+    svgoConfig: {
+      plugins: [
+        {
+          name: 'preset-default',
+          params: {
+            overrides: {
+              cleanupIds: false,
+            }
+          }
+        }
+      ]
+    }
+  },
   routeRules: {
-    '/': { prerender: true }
+    // '/': { prerender: true }
   },
 
   css: ['~/assets/main.css'],
