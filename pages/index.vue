@@ -45,9 +45,6 @@ definePageMeta({ documentDriven: { page: false, surround: false, }, });
 </script>
 
 <style scoped>
-main {
-  overflow-x: hidden;
-}
 
 .now {
   background-color: var(--dark);
@@ -192,13 +189,21 @@ img {
   /* box-shadow: 4px 4px 4px 0px var(--dark); */
 }
 
-@media (max-width: var(--mobile-breakpoint)) {
+@media (max-width: 768px) {
+
+  .about {
+    min-height: auto;
+  }
+
   .about img {
     grid-column: 1 / 12;
+    position: relative;
   }
 
   .about-text {
     grid-column: 2 / 13;
+    position: relative;
+    top: -10vh;
   }
 
   h1, h2 {
@@ -206,8 +211,13 @@ img {
   }
 
   .now {
-    min-height: 150vh;
-    margin-top: -50vh;
+    margin-top: 0;
+    padding-top: 2rem;
+    min-height: auto;
+  }
+
+  .now-container {
+    grid-template-columns: 1fr;
   }
 
   .now-text {
