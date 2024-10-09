@@ -7,7 +7,7 @@ const image = page?.value?.image ?? '';
   <Header />
   <main>
     <!-- <ContentHeroSection v-if="image" :image="image" /> -->
-    <section>
+    <section class="container">
       <h1>{{ page?.title }}</h1>
       <div class='contentContainer'>
         <ContentDoc />
@@ -18,8 +18,8 @@ const image = page?.value?.image ?? '';
 
 <style scoped>
 h1 {
-  margin: 1rem;
   font-size: clamp(1.2rem, 9vw, 2rem);
+  grid-column: 1 / span 12;
 }
 
 img {
@@ -32,6 +32,7 @@ img {
 .contentContainer {
   max-width: 800px;
   margin: 0 auto;
+  grid-column: 1 / span 12;
 }
 
 section {

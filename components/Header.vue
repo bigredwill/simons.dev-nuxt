@@ -26,6 +26,7 @@
     font-family: "Brasilero2018Free-Regular";
     font-size: 4rem;
     font-size: clamp(1.2rem, 9vw, 4rem);
+    padding-bottom: 1rem;
 
     
     /* brasilero lowercase looks better for this title */
