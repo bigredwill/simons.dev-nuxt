@@ -7,6 +7,11 @@ tags:
 
 This site is built with Nuxt, with pages defined in Markdown. I use Obsidian as my markdown editor so I wanted to use it for this project.
 
+
+> [!NOTE] Another option
+> I found this Nuxt module after the fact https://nuxt.com/modules/content-assets
+> It allows you to colocate media in the `/content` directory. With that, we could have the attachment folder path be adjacent to the document.
+
 ### Obsidian Settings
 Obsidian required a few tunings:
 1. Open the whole Nuxt proejct as an Obsidian vault. Markdown lives in `/content`, and images live adjacent in `/public/attachments`. 

@@ -41,6 +41,7 @@
 </template>
 
 <script setup>
+definePageMeta({ documentDriven: { page: false, surround: false, }, });
 </script>
 
 <style scoped>

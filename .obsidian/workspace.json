@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4eba8cc15cdc2c91",
+            "id": "9c8a5fc29cfe0fea",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/projects.md",
+                "file": "content/simons.dev - Nuxt Content + Obsidian.md",
                 "mode": "source",
                 "source": false
               }
@@ -181,7 +181,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/projects.md",
+                "file": "content/simons.dev - Nuxt Content + Obsidian.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -198,7 +198,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/projects.md",
+                "file": "content/simons.dev - Nuxt Content + Obsidian.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -221,7 +221,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/projects.md"
+                "file": "content/simons.dev - Nuxt Content + Obsidian.md"
               }
             }
           }
@@ -242,8 +242,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4eba8cc15cdc2c91",
+  "active": "9c8a5fc29cfe0fea",
   "lastOpenFiles": [
+    "content/about.md",
+    "consistency-report.md",
+    "content/08-Portfolio/index.md",
+    "content/08-Portfolio",
+    "content/projects/LP-01.md",
+    "content/projects/low-workbench.md",
+    "content/areas/Web.md",
+    "areas/adventure.md",
+    "areas",
+    "areas/web.md",
+    "content/projects.md",
+    "content/areas/Creative.md",
     "README.md",
     "assets/icons/tower.svg",
     "assets/icons/keyboard.svg",
@@ -252,7 +264,6 @@
     "content/simons.dev - Nuxt Content + Obsidian.md",
     "components/home-page/NowSection.vue",
     "components/home-page/AboutSection.vue",
-    "content/projects.md",
     "content/areas/Creative Experiments.md",
     "public/attachments/obsidian-attachments-notes.png",
     "public/attachments/Pasted image 20241008154558.png",
@@ -269,15 +280,6 @@
     "content/projects/Sunlab gate.md",
     "content/projects/Solarpunk Community Map.md",
     "content/projects/Signs.md",
-    "content/projects/Music/path of insanity.md",
-    "content/projects/Music/hermeto amen.md",
-    "content/projects/Mars College.md",
-    "content/projects/LP-01.md",
-    "content/projects/Build on the Block - Wedge Ramp.md",
-    "content/projects/Build on the Block - Jumbotron.md",
-    "content/projects/Bienalle Grant/Scorpion Hotel.md",
-    "content/projects/Bienalle Grant/Light Piers Through.md",
-    "content/projects/Bienalle Grant/index.md",
     "public/attachments/086c8732c7fd0b7b4fb8b14c6d36ed5ab4887017b91e56e01a127daa5e902838 1.jpg",
     "rename.js",
     "public/attachments/build-on-the-block-poster.png",
@@ -286,8 +288,6 @@
     "public/attachments/Screenshot-2024-06-30-at-20.32.16.png",
     "public/attachments/Screenshot-2024-06-21-at-00.25.55.png",
     "rename.cjs",
-    "public/attachments",
-    "public/attachments",
-    "server/plugins/content.ts"
+    "public/attachments"
   ]
 }

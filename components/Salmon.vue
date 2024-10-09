@@ -9,9 +9,6 @@ import IconSalmon from '~/assets/salmon-icon.svg';
 const props = defineProps({
   inverted: Boolean
 });
-
-console.log('inverted:', props.inverted);
-
 </script>
 
 <style scoped>
@@ -29,7 +26,6 @@ console.log('inverted:', props.inverted);
 .salmon-inverted #front {
   fill: blue;
 }
-
 </style>
 
 <style>

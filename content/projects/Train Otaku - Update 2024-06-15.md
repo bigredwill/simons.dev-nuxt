@@ -15,7 +15,7 @@ date: 2024-06-17
 
 ## Outcome
 - Counted some train cars. It's not perfect, likely need more/better training data. Using a custom trained YOLOv8 model to recognize individual `train-cars`
-	- ![](../../public/attachments/annotated_output_video-1.mov)
+	- <video src="../../public/attachments/annotated_output_video-1.mov" />
 - Created a remix of [Bremer/McCoy – Op](https://www.youtube.com/watch?v=gdJwssRvnzs),
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/pE8eoSjcZBA?si=mOFexNnDjez4oFQu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 	

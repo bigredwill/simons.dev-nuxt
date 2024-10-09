@@ -1,3 +1,6 @@
+> [!NOTE] Currently (Summer 2024)
+> Will is currently hacking on [osc.link](https://github.com/laubsauger/osc.link) to make interactive artwork more seamless.
+
 - Frontend Software Engineer ~
     - currently working on contracts
     - looking for full time work.

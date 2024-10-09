@@ -4,7 +4,7 @@ date: 2023-07-22
 tags:
   - ramp
 ---
-![](../../public/attachments/render-overview-final-comparison.mov)
+<video src="../../public/attachments/render-overview-final-comparison.mov" />
 Above is a side-by-side of the 3d design and a 3d scan of the built object. Dimensions are correct! (The final digital design is the all purple).
 
 
