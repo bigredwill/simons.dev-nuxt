@@ -194,6 +194,7 @@ img {
   .about {
     min-height: auto;
     grid-template-rows: 1fr;
+    margin-bottom: calc(-10vh + 2rem);
   }
 
   .about img {
@@ -214,7 +215,7 @@ img {
   }
 
   .now {
-    margin-top: -20vh;
+    margin-top: 0;
     padding-top: 2rem;
     min-height: auto;
   }
