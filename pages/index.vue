@@ -186,13 +186,13 @@ p {
 img {
   display: block;
   max-width: 100%;
-  /* box-shadow: 4px 4px 4px 0px var(--dark); */
 }
 
 @media (max-width: 768px) {
 
   .about {
     min-height: auto;
+    grid-template-rows: 1fr;
   }
 
   .about img {
@@ -204,6 +204,7 @@ img {
     grid-column: 2 / 13;
     position: relative;
     top: -10vh;
+    height: min-content
   }
 
   h1, h2 {
@@ -211,7 +212,7 @@ img {
   }
 
   .now {
-    margin-top: 0;
+    margin-top: -20vh;
     padding-top: 2rem;
     min-height: auto;
   }
@@ -232,12 +233,14 @@ img {
     display: block;
     grid-column: span 13;
     aspect-ratio: 1 / 1;
+    z-index: 1;
   }
 
   .salmon-2 {
     top: 30vh;
     grid-row: 1;
     grid-column: span 6 / -1;
+    z-index: 2;
   }
 }
 </style>

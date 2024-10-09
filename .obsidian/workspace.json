@@ -4,35 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "7c090d33b3faad88",
+        "id": "2e37521f92c92e39",
         "type": "tabs",
         "children": [
           {
-            "id": "9c8a5fc29cfe0fea",
+            "id": "0f9b817e508c39d5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/simons.dev - Nuxt Content + Obsidian.md",
+                "file": "content/about.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "bbd06557056fa60c",
+            "id": "6b1493c5fd705eb8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/the courts in Seattle.md",
+                "file": "content/Skateboarding.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "0c7a9e8055faf9de",
+            "id": "a7c3d5629c19a5dd",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -44,31 +44,7 @@
             }
           },
           {
-            "id": "05ada0915ce27d13",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/projects/Train Otaku - Update 2024-06-15.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "14b2b9a3ef24a81f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/projects/This Website.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "97129513672e2839",
+            "id": "389a8c5248e758a6",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -80,36 +56,12 @@
             }
           },
           {
-            "id": "729e2e56bc567f0e",
+            "id": "fa22d95770500825",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/projects/Solarpunk Community Map.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5891e50d04ddebce",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/projects/Signs.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6e378120a1804c61",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/projects/Build on the Block - Wedge Ramp.md",
+                "file": "content/projects/lights.md",
                 "mode": "source",
                 "source": false
               }
@@ -181,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/simons.dev - Nuxt Content + Obsidian.md",
+                "file": "content/about.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -198,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/simons.dev - Nuxt Content + Obsidian.md",
+                "file": "content/about.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -221,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/simons.dev - Nuxt Content + Obsidian.md"
+                "file": "content/about.md"
               }
             }
           }
@@ -242,15 +194,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9c8a5fc29cfe0fea",
+  "active": "0f9b817e508c39d5",
   "lastOpenFiles": [
-    "public/attachments/086c8732c7fd0b7b4fb8b14c6d36ed5ab4887017b91e56e01a127daa5e902838-1.jpg",
-    "consistency-report.md",
+    "content/Skateboarding.md",
     "content/about.md",
-    "content/08-Portfolio/index.md",
-    "content/08-Portfolio",
+    "content/projects/Bienalle Grant/index.md",
     "content/projects/LP-01.md",
     "content/projects/low-workbench.md",
+    "content/Bombay Beach.md",
+    "content/projects/lights.md",
+    "content/San Francisco.md",
+    "public/attachments/scan117684.jpeg",
+    "content/simons.dev - Nuxt Content + Obsidian.md",
+    "content/projects/Rainier wall light.md",
+    "content/projects/Bienalle Grant/Light Piers Through.md",
+    "public/attachments/IMG_6717.jpeg",
+    "public/attachments/IMG_6080.jpeg",
+    "content/Nuxt.md",
+    "public/img/headshot.jpg",
+    "content/projects/Build on the Block - Wedge Ramp.md",
+    "content/projects/Signs.md",
+    "content/projects/Solarpunk Community Map.md",
+    "content/projects/This Website.md",
+    "content/projects/Train Otaku - Update 2024-06-15.md",
+    "content/the courts in Seattle.md",
+    "public/attachments/086c8732c7fd0b7b4fb8b14c6d36ed5ab4887017b91e56e01a127daa5e902838-1.jpg",
+    "consistency-report.md",
+    "content/08-Portfolio/index.md",
+    "content/08-Portfolio",
     "content/areas/Web.md",
     "areas/adventure.md",
     "areas",
@@ -262,32 +233,13 @@
     "assets/icons/keyboard.svg",
     "components/Salmon.vue",
     "app.vue",
-    "content/simons.dev - Nuxt Content + Obsidian.md",
     "components/home-page/NowSection.vue",
     "components/home-page/AboutSection.vue",
-    "content/areas/Creative Experiments.md",
     "public/attachments/obsidian-attachments-notes.png",
     "public/attachments/Pasted image 20241008154558.png",
     "public/attachments/Pasted image 20241008153928.png",
-    "content/projects/Interpolator - Electron frontend for image-to-video.md",
-    "content/consistency-report.md",
-    "content/projects/Zine - Nice Piles.md",
-    "content/projects/Triangle Slappy Rail.md",
-    "content/the courts in Seattle.md",
-    "content/projects/Bombay Beach Quarter Pipe.md",
-    "content/Bombay Beach.md",
-    "content/projects/Train Otaku - Update 2024-06-15.md",
-    "content/projects/This Website.md",
-    "content/projects/Sunlab gate.md",
-    "content/projects/Solarpunk Community Map.md",
-    "content/projects/Signs.md",
-    "public/attachments/086c8732c7fd0b7b4fb8b14c6d36ed5ab4887017b91e56e01a127daa5e902838 1.jpg",
     "rename.js",
-    "public/attachments/build-on-the-block-poster.png",
-    "public/attachments/red_one_ford_transit_connect_very_small_4b519e1f-0ede-4601-b820-e0c132db97ce-Large.jpeg",
     "public/attachments/annotated_output_video-1.mov",
-    "public/attachments/Screenshot-2024-06-30-at-20.32.16.png",
-    "public/attachments/Screenshot-2024-06-21-at-00.25.55.png",
     "rename.cjs",
     "public/attachments"
   ]

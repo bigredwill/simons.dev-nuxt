@@ -5,10 +5,10 @@ export default defineNuxtConfig({
   content: {
     documentDriven: true,
     highlight: {
-      theme: "github-light",
+      theme: "github-dark",
     },
     experimental: {
-      search: true,
+      // search: true,
     },
   },
   svgo: {
@@ -27,7 +27,7 @@ export default defineNuxtConfig({
   },
 
   nitro: {
-    static: true,
+    // static: true,
   },
 
   css: ["~/assets/main.css"],
