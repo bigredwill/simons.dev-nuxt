@@ -6,21 +6,39 @@ const image = page?.value?.image ?? '';
 <template>
   <Header />
   <main>
-    <ContentHeroSection v-if="image" :image="image" />
-    <div class="main-wrapper">
-      <h1>{{ page.title }}</h1>
-      <ContentDoc />
-    </div>
+    <!-- <ContentHeroSection v-if="image" :image="image" /> -->
+    <section>
+      <h1>{{ page?.title }}</h1>
+      <div class='contentContainer'>
+        <ContentDoc />
+      </div>
+    </section>
   </main>
 </template>
 
 <style scoped>
-/* General Styles */
+h1 {
+  margin: 1rem;
+  font-size: clamp(1.2rem, 9vw, 2rem);
+}
+
 img {
   max-width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.contentContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  text-align: left;
+  position: relative;
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 .square-image {
@@ -37,83 +55,8 @@ header {
   margin: 0 auto;
 }
 
-.hello {
-  background-color: white;
-  position: relative;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-}
-
-.hello .text {
-  padding: 1rem;
-}
-
-.hello h1 {
-  font-size: calc(2rem + 3vw);
-  margin: 0;
-}
-
-.hello::after {
-  content: '';
-  display: block;
-  position: absolute;
-  background-color: var(--background-color);
-  clip-path: polygon(0 0, 0% 100%, 100% 100%);
-  left: 0;
-  bottom: 0;
-  width: 1rem;
-  height: 1rem;
-}
-
-.hello::before {
-  content: '';
-  display: block;
-  position: absolute;
-  background-color: var(--background-color);
-  /* clip-path: polygon(100% 0, 0% 100%, 100% 100%); */
-  clip-path: polygon(0 0, 100% 0, 100% 100%);
-  right: 0;
-  top: 0;
-  width: 1rem;
-  height: 1rem;
-}
-
-/* Main Styles */
-main {
-  padding: 1rem;
-  padding-top: 0;
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.main-wrapper {
-  background-color: white;
-  padding: 1rem;
-  position: relative;
-}
-
-.main-wrapper::after {
-  content: '';
-  display: block;
-  position: absolute;
-  background-color: var(--background-color);
-  clip-path: polygon(100% 0, 0% 100%, 0 0);
-  left: 0;
-  top: 0;
-  width: 1rem;
-  height: 1rem;
-}
-
 /* Media Queries */
 @media (max-width: 420px) {
-  .hello {
-    grid-template-columns: 1fr;
-  }
-
-  header {
-    grid-template-columns: 1fr 1fr;
-  }
-
   img {
     height: auto;
   }
