@@ -1,11 +1,11 @@
-> [!NOTE] Currently (Summer 2024)
+> Currently (Summer 2024)
 > Will is currently hacking on [osc.link](https://github.com/laubsauger/osc.link) to make interactive artwork more seamless.
 
-- Frontend Software Engineer ~
-    - currently working on contracts
-    - looking for full time work.
-- Taking a UI/UX Design course with [Designlab](https://designlab.com)
-    - I'm hoping to become proficient in Figma so I can build out ideas more quickly.
+- Currently working as a freelance software engineer.
+- Taking a UI/UX design course through <a href="https://designlab.com/">DesignLab</a>
+	- I'm hoping to become proficient in Figma so I can build out ideas more quickly.
     - I'm enjoying learning about design principles and visual design.
     - Will make me a better design and product partner for my collaborators.
+- Looking for full-time work! Frontend and Full-stack software engineering positions.
+- Living and skating in San Francisco.
 

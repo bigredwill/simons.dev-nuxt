@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/projects/Web.md",
+                "file": "content/now.md",
                 "mode": "source",
                 "source": false
               }
@@ -181,7 +181,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/projects/Web.md",
+                "file": "content/now.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -198,7 +198,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/projects/Web.md",
+                "file": "content/now.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -221,7 +221,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/projects/Web.md"
+                "file": "content/now.md"
               }
             }
           }
@@ -242,8 +242,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f5a2e7044cd8d3cf",
+  "active": "1d713361c8b9540d",
   "lastOpenFiles": [
+    "content/projects/Web.md",
     "content/code/Nuxt.md",
     "content/projects/Build on the Block - Wedge Ramp.md",
     "content/projects/Build on the Block - Jumbotron.md",
@@ -277,7 +278,6 @@
     "content/about.md",
     "content/places/Bombay Beach.md",
     "content/places",
-    "content/code/simons.dev - Nuxt Content + Obsidian.md",
     "content/code",
     "public/img/og-salmon.jpg",
     "public/img/salmon.jpg",
