@@ -1,15 +1,18 @@
 ---
 date: 2024-06-01
+image: /attachments/6367CACB-52AC-4B22-8E86-093A3EE501A6_1_105_c.jpeg
+featured: false
+description:
 ---
 
 #### 2024
-- [osc.link - Revamp of a platform for interactive media installations](../projects/osc.link%20revamp.md)
-- [../Projects/Contract - Webflow Site for AI Startup](../projects/Contract%20-%20Webflow%20Site%20for%20AI%20Startup.md)
-- [Interpolator - Electron frontend for image-to-video](../projects/Interpolator%20-%20Electron%20frontend%20for%20image-to-video.md)
+- [osc.link - Revamp of a platform for interactive media installations](osc.link%20revamp.md)
+- [../Projects/Contract - Webflow Site for AI Startup](Contract%20-%20Webflow%20Site%20for%20AI%20Startup.md)
+- [Interpolator - Electron frontend for image-to-video](Interpolator%20-%20Electron%20frontend%20for%20image-to-video.md)
 
 #### 2023
-- [Build on the Block - Jumbotron](../projects/Build%20on%20the%20Block%20-%20Jumbotron.md)
-- [Solarpunk Community Map](../projects/Solarpunk%20Community%20Map.md)
+- [Build on the Block - Jumbotron](Build%20on%20the%20Block%20-%20Jumbotron.md)
+- [Solarpunk Community Map](Solarpunk%20Community%20Map.md)
 - [This Website](../projects/This%20Website.md)
 
 I enjoy working with web-focused technologies. Intimately familiar with browser apis, debuggers, and quirks. Can transform any design in to a responsive web experience. Knows how to debug, and find performance bottlenecks.

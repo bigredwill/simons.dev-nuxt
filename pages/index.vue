@@ -8,16 +8,16 @@
     <section class="about container">
       <img src="~/assets/img/bowl.jpg" alt="Will in Bowl - photo by https://crawdadcollective.com" />
       <div class="about-text">
-        <p>work on the <NuxtLink to="/areas/web">web</NuxtLink>;</p>
-        <p>enjoying <NuxtLink to="/areas/adventure">adventure</NuxtLink>;</p>
-        <p>play <NuxtLink to="/areas/music">music</NuxtLink>;</p>
-        <p>explore <NuxtLink to="/areas/creative">creatively</NuxtLink>;</p>
+        <p>Will works on the web;</p>
+        <p>and loves a good adventure;</p>
+        <p>Check out his <NuxtLink to="/about">about</NuxtLink> page.</p>
       </div>
     </section>
     <div class="now">
       <section class="container">
         <Salmon class="salmon-2" :inverted="true" />
-        <img class="img-kickflip" src="~/assets/img/kickflip.jpg" alt="Will doing a Kickflip - photo by https://crawdadcollective.com" />
+        <img class="img-kickflip" src="~/assets/img/kickflip.jpg"
+          alt="Will doing a Kickflip - photo by https://crawdadcollective.com" />
         <div class="now-text">
           <h2 id="now">Now</h2>
           <div>
@@ -25,7 +25,8 @@
               <SvgoKeyboard />Currently working as a freelance software engineer.
             </p>
             <p>
-              <SvgoKeyboard /><span>Taking a UI/UX design course through <a href="https://designlab.com/">DesignLab</a></span>
+              <SvgoBrush /><span>Taking a UI/UX design course through <a
+                  href="https://designlab.com/">DesignLab</a></span>
             </p>
             <p>
               <SvgoFrame />Looking for full-time work! Frontend and Full-stack software engineering positions.
@@ -45,7 +46,6 @@ definePageMeta({ documentDriven: { page: false, surround: false, }, });
 </script>
 
 <style scoped>
-
 .now {
   background-color: var(--dark);
   max-width: 100vw;
@@ -75,7 +75,7 @@ definePageMeta({ documentDriven: { page: false, surround: false, }, });
   grid-template-columns: 40px 1fr;
   gap: 1rem;
 
-  font-family: monospace;
+  /* font-family: monospace; */
   height: auto;
   text-align: left;
   color: var(--light);
@@ -125,7 +125,7 @@ h1 {
   padding: 2rem 1.25rem;
   width: 100%;
 
-  font-family: monospace;
+  /* font-family: monospace; */
   height: auto;
 }
 
@@ -155,7 +155,8 @@ h1 {
 }
 
 
-h1,h2 {
+h1,
+h2 {
   color: var(--dark);
   text-shadow: 4px 4px 2px var(--salmon);
   font-family: var(--header-font-family);
@@ -207,7 +208,8 @@ img {
     height: min-content
   }
 
-  h1, h2 {
+  h1,
+  h2 {
     text-shadow: 2px 2px 1px #FF8465;
   }
 
@@ -226,9 +228,9 @@ img {
     grid-column: 1 / span 12;
     padding-top: 1rem;
   }
+
   .now img {
     grid-row: 1;
-    min-height: 50vh;
     width: auto;
     display: block;
     grid-column: span 13;

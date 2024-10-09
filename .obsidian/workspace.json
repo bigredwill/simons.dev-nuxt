@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/projects/Rainier wall light.md",
+                "file": "content/projects/Web.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,19 +37,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/projects/Build on the Block - Jumbotron.md",
+                "file": "content/projects/Signs.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "c7ee114faa9e1ba8",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "public/attachments/osc-link-image.png"
               }
             }
           },
@@ -124,7 +114,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -153,7 +143,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "haiku",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -170,7 +160,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -190,7 +181,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/projects/Build on the Block - Jumbotron.md",
+                "file": "content/projects/Web.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -207,7 +198,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/projects/Build on the Block - Jumbotron.md",
+                "file": "content/projects/Web.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -230,7 +221,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/projects/Build on the Block - Jumbotron.md"
+                "file": "content/projects/Web.md"
               }
             }
           }
@@ -251,15 +242,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3d3ad09439975012",
+  "active": "f5a2e7044cd8d3cf",
   "lastOpenFiles": [
+    "content/code/Nuxt.md",
+    "content/projects/Build on the Block - Wedge Ramp.md",
+    "content/projects/Build on the Block - Jumbotron.md",
+    "content/projects/Contract - Webflow Site for AI Startup.md",
+    "content/projects/lights.md",
+    "content/projects/Mars College.md",
+    "content/projects/Rainier wall light.md",
+    "content/projects/Signs.md",
+    "public/attachments/IMG_8033.jpeg",
+    "public/attachments/IMG_8034.jpeg",
     "content/projects/osc.link revamp.md",
     "public/attachments/osc-link-image.png",
+    "assets/icons/brush.svg",
     "public/attachments/osc.link.png",
     "content/projects/Train Otaku.md",
     "content/projects/Bombay Beach Quarter Pipe.md",
-    "content/projects/Build on the Block - Wedge Ramp.md",
-    "content/projects/lights.md",
     "content/projects/LP-01.md",
     "content/Skateboarding.md",
     "public/attachments/train-otaku.jpg",
@@ -269,8 +269,6 @@
     "content/projects/Music/hermeto amen.md",
     "content/projects/low-workbench.md",
     "content/projects/Solarpunk Community Map.md",
-    "content/projects/Signs.md",
-    "content/projects/Rainier wall light.md",
     "content/projects/Interpolator - Electron frontend for image-to-video.md",
     "content/projects.md",
     "pages/projects.vue",
@@ -280,17 +278,11 @@
     "content/places/Bombay Beach.md",
     "content/places",
     "content/code/simons.dev - Nuxt Content + Obsidian.md",
-    "content/code/simons.dev - Nuxt Content + Obsidian.md",
     "content/code",
     "public/img/og-salmon.jpg",
     "public/img/salmon.jpg",
-    "content/0002-10-01.md",
-    "content/projects/Bienalle Grant/index.md",
     "public/attachments/scan117684.jpeg",
     "public/attachments/IMG_6717.jpeg",
-    "public/attachments/IMG_6080.jpeg",
-    "public/img/headshot.jpg",
-    "public/attachments/086c8732c7fd0b7b4fb8b14c6d36ed5ab4887017b91e56e01a127daa5e902838-1.jpg",
     "content/08-Portfolio",
     "areas",
     "components/Salmon.vue",
