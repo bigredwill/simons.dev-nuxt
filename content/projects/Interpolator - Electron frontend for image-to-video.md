@@ -1,7 +1,7 @@
 ---
 date: 2024-05-22
 image: 
-draft: "true"
+draft: true
 ---
 `Article is work in progress`
 

@@ -4,6 +4,7 @@ date: 2023-07-22
 tags:
   - ramp
 image: /attachments/Screen-Shot-2023-07-18-at-6.15.08-PM.png
+featured: true
 ---
 I was commissioned to build a ramp for the Build on the Block contest in Seattle. My usual ramp building process is to plan on paper, and usually improvise on the spot with construction. Since I was being paid (really just material cost plus a burger) and I was using new material, I decided to be more thorough. 
 
