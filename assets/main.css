@@ -27,6 +27,8 @@
   --tertiary: #84a59d;
   --highlight: #8f9fa926;
   --textHighlight: #fff23688;
+  --accent: var(--tertiary);
+  --salmon: #FF8465;
 
   --background-color: var(--light);
   --header-font-family: "Brasilero2018Free-Regular";
@@ -53,7 +55,7 @@ h1, h2, h3 {
 
 h1, h2, h3 {
   color: var(--dark);
-  text-shadow: 4px 4px 2px #FF8465;
+  text-shadow: 4px 4px 2px var(--salmon);
   font-family: var(--header-font-family);
   font-size: clamp(1.2rem, 9vw, 6rem);
   font-weight: 400;
@@ -86,7 +88,7 @@ code {
 body {
   font-family: "Helvetica", Arial, sans-serif;
   font-size: clamp(.8rem, 4vw, 1rem);
-  background-color: #FAF8F8;
+  background-color: var(--light);
   margin: 0;
   min-height: 100vh;
 }

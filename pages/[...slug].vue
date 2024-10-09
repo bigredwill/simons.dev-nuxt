@@ -8,6 +8,7 @@ const image = page?.value?.image ?? '';
   <main>
     <ContentHeroSection v-if="image" :image="image" />
     <div class="main-wrapper">
+      <h1>{{ page.title }}</h1>
       <ContentDoc />
     </div>
   </main>

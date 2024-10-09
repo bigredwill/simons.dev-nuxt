@@ -1,5 +1,3 @@
-# now
-
 - Frontend Software Engineer ~
     - currently working on contracts
     - looking for full time work.

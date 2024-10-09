@@ -97,6 +97,7 @@ section {
 h1 {
   margin-top: 0;
   grid-column: span 12;
+
 }
 
 .about {
@@ -158,7 +159,7 @@ h1 {
 
 h1,h2 {
   color: var(--dark);
-  text-shadow: 4px 4px 2px #FF8465;
+  text-shadow: 4px 4px 2px var(--salmon);
   font-family: var(--header-font-family);
   font-size: 6rem;
   font-size: clamp(1.2rem, 9vw, 6rem);
@@ -168,6 +169,7 @@ h1,h2 {
   letter-spacing: 0.08rem;
   text-transform: lowercase;
   text-align: left;
+  -webkit-text-stroke: 2px var(--dark);
 }
 
 h2 {
