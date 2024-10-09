@@ -1,5 +1,7 @@
 ---
 date: 2024-05-05
+featured: true
+image: /attachments/IMG_3913-2(1).jpeg
 ---
 A 12' wide steel gate, using pallet rack uprights as the frame.
 

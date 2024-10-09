@@ -1,6 +1,9 @@
 ---
 title: Build on the Block - Jumbotron
 date: 2023-07-22
+featured: true
+image: /attachments/Pasted-image-20240302074102.png
+description: A single page scoreboard for the Build on the Block 2023 contest put on by 35th North skateshop in Seattle, WA. Built to be displayed on a ~50inch tv monitor outside.
 ---
 - **Code**: https://github.com/bigredwill/build-on-the-block
 - **Demo**: https://battle-on-the-block.vercel.app/

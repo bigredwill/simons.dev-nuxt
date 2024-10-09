@@ -13,9 +13,53 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/about.md",
+                "file": "content/projects/lights.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "1d713361c8b9540d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/projects/Rainier wall light.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3d3ad09439975012",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/projects/Build on the Block - Jumbotron.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c7ee114faa9e1ba8",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "public/attachments/osc-link-image.png"
+              }
+            }
+          },
+          {
+            "id": "0abb2a9c6e280611",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "public/attachments/osc.link.png"
               }
             }
           },
@@ -37,7 +81,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Bombay Beach.md",
+                "file": "content/places/Bombay Beach.md",
                 "mode": "source",
                 "source": false
               }
@@ -66,8 +110,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "152dc7a4d13b1e79",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/projects/Train Otaku.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -133,7 +190,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/about.md",
+                "file": "content/projects/Build on the Block - Jumbotron.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +207,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/about.md",
+                "file": "content/projects/Build on the Block - Jumbotron.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +230,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/about.md"
+                "file": "content/projects/Build on the Block - Jumbotron.md"
               }
             }
           }
@@ -194,53 +251,52 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0f9b817e508c39d5",
+  "active": "3d3ad09439975012",
   "lastOpenFiles": [
+    "content/projects/osc.link revamp.md",
+    "public/attachments/osc-link-image.png",
+    "public/attachments/osc.link.png",
+    "content/projects/Train Otaku.md",
+    "content/projects/Bombay Beach Quarter Pipe.md",
+    "content/projects/Build on the Block - Wedge Ramp.md",
+    "content/projects/lights.md",
+    "content/projects/LP-01.md",
+    "content/Skateboarding.md",
+    "public/attachments/train-otaku.jpg",
+    "content/projects/Bienalle Grant/Light Piers Through.md",
+    "content/projects/garden.simons.dev.md",
+    "content/projects/Music/path of insanity.md",
+    "content/projects/Music/hermeto amen.md",
+    "content/projects/low-workbench.md",
+    "content/projects/Solarpunk Community Map.md",
+    "content/projects/Signs.md",
+    "content/projects/Rainier wall light.md",
+    "content/projects/Interpolator - Electron frontend for image-to-video.md",
+    "content/projects.md",
+    "pages/projects.vue",
+    "content/now.md",
+    "content/freelance.md",
+    "content/about.md",
+    "content/places/Bombay Beach.md",
+    "content/places",
+    "content/code/simons.dev - Nuxt Content + Obsidian.md",
+    "content/code/simons.dev - Nuxt Content + Obsidian.md",
+    "content/code",
     "public/img/og-salmon.jpg",
     "public/img/salmon.jpg",
     "content/0002-10-01.md",
-    "content/about.md",
-    "content/Skateboarding.md",
     "content/projects/Bienalle Grant/index.md",
-    "content/projects/LP-01.md",
-    "content/projects/low-workbench.md",
-    "content/Bombay Beach.md",
-    "content/projects/lights.md",
-    "content/San Francisco.md",
     "public/attachments/scan117684.jpeg",
-    "content/simons.dev - Nuxt Content + Obsidian.md",
-    "content/projects/Rainier wall light.md",
-    "content/projects/Bienalle Grant/Light Piers Through.md",
     "public/attachments/IMG_6717.jpeg",
     "public/attachments/IMG_6080.jpeg",
-    "content/Nuxt.md",
     "public/img/headshot.jpg",
-    "content/projects/Build on the Block - Wedge Ramp.md",
-    "content/projects/Signs.md",
-    "content/projects/Solarpunk Community Map.md",
-    "content/projects/This Website.md",
-    "content/projects/Train Otaku - Update 2024-06-15.md",
-    "content/the courts in Seattle.md",
     "public/attachments/086c8732c7fd0b7b4fb8b14c6d36ed5ab4887017b91e56e01a127daa5e902838-1.jpg",
-    "consistency-report.md",
-    "content/08-Portfolio/index.md",
     "content/08-Portfolio",
-    "content/areas/Web.md",
-    "areas/adventure.md",
     "areas",
-    "areas/web.md",
-    "content/projects.md",
-    "assets/icons/tower.svg",
-    "assets/icons/keyboard.svg",
     "components/Salmon.vue",
     "app.vue",
     "components/home-page/NowSection.vue",
     "components/home-page/AboutSection.vue",
-    "public/attachments/obsidian-attachments-notes.png",
-    "public/attachments/Pasted image 20241008154558.png",
-    "rename.js",
-    "public/attachments/annotated_output_video-1.mov",
-    "rename.cjs",
-    "public/attachments"
+    "rename.js"
   ]
 }

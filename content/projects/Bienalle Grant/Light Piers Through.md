@@ -1,3 +1,7 @@
+---
+date: 2024-03-01
+---
+`This was a proposal for the Bombay Beach Bienalle.`
 ## Light Pier
 
 Like most old piers, the deck is gone and just the vertical piers left standing. These beams are special though, they have been soaked in the mineral rich Salton Sea and glow at night.

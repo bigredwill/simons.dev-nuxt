@@ -4,6 +4,7 @@ tags:
   - music
   - beats
   - art
+date: 2024-07-02
 ---
  hermeto amen samples Hermeto Pascoal playing water jugs in water with some other men.
 ![](../../../public/attachments/Screenshot-2024-06-20-at-23.47.41.png)

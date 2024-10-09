@@ -1,5 +1,7 @@
 ---
-created: "2024-06-28"
+date: 2024-06-28
+featured: true
+image: attachments/Pasted-image-20240628234809.png
 ---
 
 Sometimes, to be perceived as legit, all something needs is a sign.

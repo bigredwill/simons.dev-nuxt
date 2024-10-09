@@ -3,15 +3,19 @@ title: Build on the Block - Wedge Ramp
 date: 2023-07-22
 tags:
   - ramp
+image: /attachments/Screen-Shot-2023-07-18-at-6.15.08-PM.png
 ---
-<video src="../../public/attachments/render-overview-final-comparison.mov" />
+I was commissioned to build a ramp for the Build on the Block contest in Seattle. My usual ramp building process is to plan on paper, and usually improvise on the spot with construction. Since I was being paid (really just material cost plus a burger) and I was using new material, I decided to be more thorough. 
+
+<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/DrYrWxnFtnQ?si=6WtI-Pzb0bLAeqsU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 Above is a side-by-side of the 3d design and a 3d scan of the built object. Dimensions are correct! (The final digital design is the all purple).
 
 
 ![](../../public/attachments/Pasted-image-20240302080016.png)
 
 ## Design
-I was commissioned to build a ramp for the Build on the Block contest in Seattle. My usual ramp building process is to plan on paper, and usually improvise on the spot with construction. Since I was being paid (really just material cost plus a burger) and I was using new material, I decided to be more thorough. 
 
 The project started with some hand drawn sketches. I took these in to Sketchup and created a 3d mockup. This allowed me to easily iterate and modify dimensions, angles, etc. as well as plan for a bill of materials.
 

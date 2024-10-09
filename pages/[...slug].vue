@@ -34,7 +34,7 @@ h1 {
 
 .container-inner {
   max-width: 100%;
-  width: 800px;
+  width: var(--content-max-width);
   padding: 1rem;
   margin: 0 auto;
 }
@@ -66,25 +66,4 @@ section {
   max-width: var(--max-width);
   margin: 0 auto;
 }
-
-.square-image {
-  min-width: 50px;
-}
-
-/* Header Styles */
-header {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 1rem;
-  padding: 1rem;
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-/* Media Queries */
-/* @media (max-width: 420px) {
-  img {
-    height: auto;
-  }
-} */
 </style>

@@ -1,3 +1,7 @@
+---
+date: 2024-06-03
+---
+
 A simple workbench made of found and reclaimed lumber.
 
 It is the exact height as a 17gallon Home Depot tote - this allows for the workbench to be extended for work-holding purposes.

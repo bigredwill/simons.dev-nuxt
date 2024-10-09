@@ -1,3 +1,7 @@
+---
+date: 2022-01-01
+---
+
 2022
 
 Made with my roommates old beer box, cardboard, and glue.
