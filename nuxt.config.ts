@@ -2,6 +2,12 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/content', 'nuxt-svgo', '@nuxt/image'],
+  content: {
+    documentDriven: true,
+    highlight: {
+      theme: 'github-light'
+    }
+  },
   svgo: {
     svgoConfig: {
       plugins: [

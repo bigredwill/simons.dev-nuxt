@@ -19,7 +19,7 @@
         <Salmon class="salmon-2" :inverted="true" />
         <img class="img-kickflip" src="~/assets/img/kickflip.jpg" alt="Will doing a Kickflip - photo by https://crawdadcollective.com" />
         <div class="now-text">
-          <h2 id="#now">Now</h2>
+          <h2 id="now">Now</h2>
           <div>
             <p>
               <SvgoKeyboard />Currently working as a freelance software engineer.
@@ -189,7 +189,7 @@ img {
   /* box-shadow: 4px 4px 4px 0px var(--dark); */
 }
 
-@media (max-width: 768px) {
+@media (max-width: var(--mobile-breakpoint)) {
   .about img {
     grid-column: 1 / 12;
   }

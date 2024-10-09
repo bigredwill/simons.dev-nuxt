@@ -1,29 +1,14 @@
-<script>
-export default {
-  data() {
-    return {
-      today: new Date().toLocaleDateString('en-US', { weekday: 'long' })
-    };
-  }
-};
+<script setup lang="ts">
+const { page } = useContent()
+const image = page?.value?.image ?? '';
 </script>
 
 <template>
-  <header>
-    <div class="hello">
-      <div class="text">
-        <h1>Will Simons</h1>
-        <p>software dev &<br />multi-potentialist &<br />builder</p>
-      </div>
-      <div class="square-image">
-        <img src="/img/headshot.jpg" alt="picture of will" />
-      </div>
-    </div>
-    <Navigation />
-  </header>
+  <Header />
   <main>
+    <ContentHeroSection v-if="image" :image="image" />
     <div class="main-wrapper">
-      <ContentDoc/>
+      <ContentDoc />
     </div>
   </main>
 </template>

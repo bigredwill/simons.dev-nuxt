@@ -8,12 +8,108 @@
         "type": "tabs",
         "children": [
           {
-            "id": "614d86cadabfe67b",
+            "id": "4eba8cc15cdc2c91",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/08-Portfolio/Projects/Bombay Beach Quarter Pipe.md",
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bbd06557056fa60c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/the courts in Seattle.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0c7a9e8055faf9de",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/Bombay Beach.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "05ada0915ce27d13",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/projects/Train Otaku - Update 2024-06-15.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "14b2b9a3ef24a81f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/projects/This Website.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "97129513672e2839",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/projects/LP-01.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "729e2e56bc567f0e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/projects/Solarpunk Community Map.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5891e50d04ddebce",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/projects/Signs.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6e378120a1804c61",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/projects/Build on the Block - Wedge Ramp.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +181,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/08-Portfolio/Projects/Bombay Beach Quarter Pipe.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +198,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/08-Portfolio/Projects/Bombay Beach Quarter Pipe.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +221,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/08-Portfolio/Projects/Bombay Beach Quarter Pipe.md"
+                "file": "README.md"
               }
             }
           }
@@ -146,17 +242,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "614d86cadabfe67b",
+  "active": "4eba8cc15cdc2c91",
   "lastOpenFiles": [
-    "content/08-Portfolio/index.md",
-    "public/attachments",
-    "content/areas/web.md",
-    "content/areas/creative.md",
-    "content/about.md",
-    "content/projects.md",
-    "content/now.md",
-    "content/freelance.md",
+    "assets/icons/tower.svg",
+    "assets/icons/keyboard.svg",
+    "components/Salmon.vue",
+    "app.vue",
+    "content/simons.dev - Nuxt Content + Obsidian.md",
     "README.md",
-    "content/08-Portfolio/Projects/Music/attachments"
+    "components/home-page/NowSection.vue",
+    "components/home-page/AboutSection.vue",
+    "content/projects.md",
+    "content/areas/Creative Experiments.md",
+    "public/attachments/obsidian-attachments-notes.png",
+    "public/attachments/Pasted image 20241008154558.png",
+    "public/attachments/Pasted image 20241008153928.png",
+    "content/projects/Interpolator - Electron frontend for image-to-video.md",
+    "content/consistency-report.md",
+    "content/projects/Zine - Nice Piles.md",
+    "content/projects/Triangle Slappy Rail.md",
+    "content/the courts in Seattle.md",
+    "content/projects/Bombay Beach Quarter Pipe.md",
+    "content/Bombay Beach.md",
+    "content/projects/Train Otaku - Update 2024-06-15.md",
+    "content/projects/This Website.md",
+    "content/projects/Sunlab gate.md",
+    "content/projects/Solarpunk Community Map.md",
+    "content/projects/Signs.md",
+    "content/projects/Music/path of insanity.md",
+    "content/projects/Music/hermeto amen.md",
+    "content/projects/Mars College.md",
+    "content/projects/LP-01.md",
+    "content/projects/Build on the Block - Wedge Ramp.md",
+    "content/projects/Build on the Block - Jumbotron.md",
+    "content/projects/Bienalle Grant/Scorpion Hotel.md",
+    "content/projects/Bienalle Grant/Light Piers Through.md",
+    "content/projects/Bienalle Grant/index.md",
+    "public/attachments/086c8732c7fd0b7b4fb8b14c6d36ed5ab4887017b91e56e01a127daa5e902838 1.jpg",
+    "rename.js",
+    "public/attachments/build-on-the-block-poster.png",
+    "public/attachments/red_one_ford_transit_connect_very_small_4b519e1f-0ede-4601-b820-e0c132db97ce-Large.jpeg",
+    "public/attachments/annotated_output_video-1.mov",
+    "public/attachments/Screenshot-2024-06-30-at-20.32.16.png",
+    "public/attachments/Screenshot-2024-06-21-at-00.25.55.png",
+    "public/attachments/Screenshot-2024-06-20-at-23.47.41.png",
+    "rename.cjs",
+    "public/attachments",
+    "public/attachments",
+    "server/plugins/content.ts"
   ]
 }

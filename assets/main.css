@@ -35,6 +35,7 @@
   --grid-gap: 1rem;
   --grid-columns: 12;
   --grid-max-width: 100%;
+  --mobile-breakpoint: 768px;
 }
 
 html {
@@ -50,7 +51,7 @@ h1, h2, h3 {
   font-family: var(--header-font-family);
 }
 
-h1, h2 {
+h1, h2, h3 {
   color: var(--dark);
   text-shadow: 4px 4px 2px #FF8465;
   font-family: var(--header-font-family);
@@ -67,6 +68,19 @@ h1 {
 
 h2 {
   font-size: clamp(1.2rem, 9vw, 4rem);
+}
+
+h3 {
+  font-size: clamp(1.2rem, 9vw, 2rem);
+}
+
+pre {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+code {
+  background-color: var(--textHighlight);
 }
 
 body {

@@ -7,11 +7,11 @@ title: 🍥 Will Simons
 
 ---
 
-work on the [web](Areas/Web.md); <br />
-hands on with [building](Areas/Building.md); <br />
-enjoying [adventure](Areas/Adventure.md); <br />
-play [music](Areas/Music.md); <br />
-explore [creative experimentation](Areas/Creative%20Experiments.md); <br />
+work on the [Web](../areas/Web.md); <br />
+hands on with [Building](../areas/Building.md); <br />
+enjoying [Adventure](../areas/Adventure.md); <br />
+play [Music](../areas/Music.md); <br />
+explore [creative experimentation](../areas/Creative%20Experiments.md); <br />
 
 ---
 
@@ -19,4 +19,4 @@ explore [creative experimentation](Areas/Creative%20Experiments.md); <br />
 My interests are varied, and, I believe, complimentary.
 
 
-![](00836-3953688282-salmon%20through%20a%20porthole,%20life%20acquatic%20with%20steve%20zissou,%20film%20photograph,%20black%20and%20white,%20film%20grain,%20highly%20detailed,%20maste%20Small.jpeg)
+![](00836-3953688282-salmon-through-a-porthole,-life-acquatic-with-steve-zissou,-film-photograph,-black-and-white,-film-grain,-highly-detailed,-maste-Small.jpeg)

@@ -3,5 +3,8 @@
   "attachmentFolderPath": "public/attachments",
   "userIgnoreFilters": [
     "node_modules/"
-  ]
+  ],
+  "newLinkFormat": "relative",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "content"
 }
