@@ -25,7 +25,6 @@ const spawnSalmon = () => {
   const rect = button.getBoundingClientRect();
   const startX = rect.left - 100;
   const startY = rect.top + window.scrollY - 100;
-  console.log(startX, startY)
 
   salmons.value.push({ 
     inverted: Math.random() > 0.5, 
@@ -65,6 +64,8 @@ button .plus {
     color: white;
     font-family: var(--header-font-family);
     transition: transform 0.1s ease;
+    position: absolute;
+    left: 25%;
 }
 
 button:hover .plus {
@@ -81,6 +82,9 @@ button:active .plus {
 .salmon-button-icon {
     transform: scale(1.4);
     transition: transform 0.05s ease;
+    position: absolute;
+    right: 11%;
+    top: 24%;
 }
 
 button:hover .salmon-button-icon {

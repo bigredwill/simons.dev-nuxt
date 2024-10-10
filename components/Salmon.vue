@@ -1,7 +1,7 @@
 <template>
   <IconSalmon 
     :style="{
-      transform: `scale(${salmonPosition.hover ? 1.1 : 1}) translateX(${salmonPosition.x}px) translateY(${salmonPosition.y}px)`,
+      transform: `scale(${salmonPosition.hover ? 1.01 : 1}) translateX(${salmonPosition.x}px) translateY(${salmonPosition.y}px)`,
       zIndex: salmonPosition.active ? 1000 : 4
     }"
     @mousedown="handleStart"
@@ -99,7 +99,6 @@ const handleHover = (isHovering) => {
   fill: revert-layer;
   cursor: move;
   transform-origin: center;
-  transition: transform 0.3s ease-in-out; /* Smooth transition for both rotate and translate */
 }
 
 .salmon-icon * {
