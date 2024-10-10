@@ -16,7 +16,7 @@ useSeoMeta({
 
 
 <template>
-  <div>
+  <div><SalmonSpawner />
     <NuxtPage />
   </div>
 </template>
