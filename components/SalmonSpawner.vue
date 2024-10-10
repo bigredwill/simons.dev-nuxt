@@ -80,10 +80,9 @@ button:active .salmon-button-icon {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* height: 100vh; */
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: .5rem;
+  right: .5rem;
   z-index: 4;
 }
 
