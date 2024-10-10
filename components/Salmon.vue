@@ -43,7 +43,14 @@ const getEventClientCoords = (event) => {
   return { clientX: event.clientX, clientY: event.clientY };
 };
 
+const isPointerOverSalmonPathGroup = (event) => {
+  const target = event.target;
+  return target.closest('.salmon-path-group') !== null;
+};
+
 const handleStart = (event) => {
+  if (!isPointerOverSalmonPathGroup(event)) return;
+
   event.preventDefault();
   const { clientX, clientY } = getEventClientCoords(event);
   salmonPosition.active = true;
