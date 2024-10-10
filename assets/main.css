@@ -111,6 +111,7 @@ body {
   color: var(--dark);
   font-weight: 300;
   line-break: normal;
+  overflow-x: hidden;
 }
 
 a {

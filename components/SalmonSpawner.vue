@@ -4,7 +4,14 @@
         <span class="plus">+</span><SvgoSalmonIcon class="salmon-button-icon"/>
     </button>
   </div>
-  <Salmon class="salmon" v-for="(salmon, index) in salmons" :key="index" :inverted="salmon.inverted" />
+  <Salmon 
+    class="salmon" 
+    v-for="(salmon, index) in salmons" 
+    :key="index" 
+    :inverted="salmon.inverted" 
+    :startX="salmon.startX" 
+    :startY="salmon.startY" 
+  />
 </template>
 
 <script setup>
@@ -14,8 +21,17 @@ import Salmon from './Salmon.vue';
 const salmons = ref([]);
 
 const spawnSalmon = () => {
-    // todo: add salmon color pallettes
-  salmons.value.push({ inverted: Math.random() > 0.5 });
+  const button = document.querySelector('.salmon-spawner button');
+  const rect = button.getBoundingClientRect();
+  const startX = rect.left - 100;
+  const startY = rect.top + window.scrollY - 100;
+  console.log(startX, startY)
+
+  salmons.value.push({ 
+    inverted: Math.random() > 0.5, 
+    startX, 
+    startY 
+  });
 };
 </script>
 
@@ -87,12 +103,12 @@ button:active .salmon-button-icon {
 }
 
 .salmon {
-    position: fixed;
+    position: absolute;
     z-index: 4;
     width: 200px;
     height: 200px;
-    bottom: 0;
-    right: 0;
+    top: 0;
+    left: 0;
     cursor: move;
 }
 </style>
