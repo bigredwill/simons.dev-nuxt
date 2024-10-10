@@ -1,19 +1,21 @@
 <template>
-  <IconSalmon 
+  <div
+    ref="iconSalmon"
     :style="{
       transform: `scale(${salmonPosition.hover ? 1.01 : 1}) translateX(${salmonPosition.x}px) translateY(${salmonPosition.y}px)`,
       zIndex: salmonPosition.active ? 1000 : 4
     }"
     @mousedown="handleStart"
     @touchstart="handleStart"
-    @mouseover="handleHover(true)"
-    @mouseleave="handleHover(false)"
-    :class="{ 'salmon-icon': 'salmon-icon', 'salmon-inverted': inverted }" 
-  />
+    @mouseover="handleMouseOver"
+    @mouseleave="handleMouseLeave"
+  >
+    <IconSalmon :class="{ 'salmon-icon': 'salmon-icon', 'salmon-inverted': inverted, 'hover': salmonPosition.hover }" />
+  </div>
 </template>
 
 <script setup>
-import { reactive } from 'vue';
+import { reactive, ref } from 'vue';
 import IconSalmon from '~/assets/salmon-icon.svg';
 
 const props = defineProps({
@@ -33,6 +35,7 @@ const salmonPosition = reactive({
   initialY: 0
 });
 
+const iconSalmon = ref(null);
 let animationFrameId = null;
 
 const getEventClientCoords = (event) => {
@@ -43,25 +46,21 @@ const getEventClientCoords = (event) => {
   return { clientX: event.clientX, clientY: event.clientY };
 };
 
-const isPointerOverSalmonPathGroup = (event) => {
-  const target = event.target;
-  return target.closest('.salmon-path-group') !== null;
-};
-
 const handleStart = (event) => {
-  if (!isPointerOverSalmonPathGroup(event)) return;
+  if (event.target.closest('.salmon-path-group')) {
+    console.log('handleStart');
+    event.preventDefault();
+    const { clientX, clientY } = getEventClientCoords(event);
+    salmonPosition.active = true;
+    salmonPosition.startX = clientX;
+    salmonPosition.startY = clientY;
+    salmonPosition.initialX = salmonPosition.x;
+    salmonPosition.initialY = salmonPosition.y;
 
-  event.preventDefault();
-  const { clientX, clientY } = getEventClientCoords(event);
-  salmonPosition.active = true;
-  salmonPosition.startX = clientX;
-  salmonPosition.startY = clientY;
-  salmonPosition.initialX = salmonPosition.x;
-  salmonPosition.initialY = salmonPosition.y;
-
-  // Add listeners only during the active drag
-  window.addEventListener('pointermove', handleMove);
-  window.addEventListener('pointerup', handleEnd);
+    // Add listeners only during the active drag
+    window.addEventListener('pointermove', handleMove);
+    window.addEventListener('pointerup', handleEnd);
+  }
 };
 
 const handleMove = (event) => {
@@ -94,9 +93,18 @@ const handleEnd = (event) => {
   }
 };
 
-const handleHover = (isHovering) => {
-  salmonPosition.hover = isHovering;
+const handleHover = (event, isHovering) => {
+  if (event.target.closest('.salmon-path-group')) {
+    console.log('handleHover', isHovering);
+    salmonPosition.hover = isHovering;
+  } else {
+    salmonPosition.hover = false;
+  }
 };
+
+
+const handleMouseOver = (event) => handleHover(event, true);
+const handleMouseLeave = (event) => handleHover(event, false);
 </script>
 
 <style scoped>
@@ -104,8 +112,11 @@ const handleHover = (isHovering) => {
   width: 100%;
   height: 100%;
   fill: revert-layer;
-  cursor: move;
   transform-origin: center;
+}
+
+.salmon-icon.hover {
+  cursor: move;
 }
 
 .salmon-icon * {
