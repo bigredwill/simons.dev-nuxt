@@ -6,7 +6,7 @@
       <Salmon class="salmon-1" />
     </section>
     <section class="about container">
-      <LazyNuxtImg src="/img/bowl.jpg" alt="Will in Bowl - photo by https://crawdadcollective.com" />
+      <LazyNuxtImg class="img-bowl" src="/img/bowl.jpg" alt="Will in Bowl - photo by https://crawdadcollective.com" />
       <div class="about-text">
         <p>Will works on the web;</p>
         <p>and loves a good adventure;</p>
@@ -104,12 +104,13 @@ h1 {
   z-index: 1;
 }
 
-.about img {
+.about .img-bowl {
   grid-column: 1 / span 10;
   /* grid-row: 1 / span 2; */
   grid-row-start: 1;
   grid-row-end: 2;
   position: absolute;
+  width: 100%;
 }
 
 .about-text {
@@ -196,7 +197,7 @@ img {
     margin-bottom: calc(-10vh + 2rem);
   }
 
-  .about img {
+  .about .img-bowl {
     grid-column: 1 / 12;
     position: relative;
   }
