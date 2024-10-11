@@ -6,7 +6,7 @@
       <Salmon class="salmon-1" />
     </section>
     <section class="about container">
-      <img src="~/assets/img/bowl.jpg" alt="Will in Bowl - photo by https://crawdadcollective.com" />
+      <LazyNuxtImg src="/img/bowl.jpg" alt="Will in Bowl - photo by https://crawdadcollective.com" />
       <div class="about-text">
         <p>Will works on the web;</p>
         <p>and loves a good adventure;</p>
@@ -16,8 +16,7 @@
     <div class="now">
       <section class="container">
         <Salmon class="salmon-2" :inverted="true" />
-        <img class="img-kickflip" src="~/assets/img/kickflip.jpg"
-          alt="Will doing a Kickflip - photo by https://crawdadcollective.com" />
+        <LazyNuxtImg class="img-kickflip" src="/img/kickflip.jpg"  alt="Will doing a Kickflip - photo by https://crawdadcollective.com" />
         <div class="now-text">
           <h2 id="now">Now</h2>
           <div>
@@ -230,7 +229,7 @@ img {
     padding-top: 1rem;
   }
 
-  .now img {
+  .img-kickflip {
     grid-row: 1;
     width: auto;
     display: block;
@@ -247,3 +246,14 @@ img {
   }
 }
 </style>
+
+<!-- <style>
+  .now img {
+    grid-row: 1;
+    width: auto;
+    display: block;
+    grid-column: span 13;
+    aspect-ratio: 1 / 1;
+    z-index: 1;
+  }
+</style> -->
