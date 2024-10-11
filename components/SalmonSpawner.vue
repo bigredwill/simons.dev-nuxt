@@ -35,6 +35,7 @@ const spawnSalmon = () => {
 </script>
 
 <style scoped>
+
 button {
     display: flex;
     justify-content: center;
@@ -104,6 +105,7 @@ button:active .salmon-button-icon {
   bottom: .5rem;
   right: .5rem;
   z-index: 4;
+  perspective: 800px;
 }
 
 .salmon {

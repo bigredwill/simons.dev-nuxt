@@ -2,8 +2,11 @@
   <div
     ref="iconSalmon"
     :style="{
-      transform: `scale(${salmonPosition.hover ? 1.01 : 1}) translateX(${salmonPosition.x}px) translateY(${salmonPosition.y}px)`,
-      zIndex: salmonPosition.active ? 1000 : 4
+      transform: `translateX(${salmonPosition.x}px) translateY(${salmonPosition.y}px)`,
+      transformOrigin: `${salmonPosition.x}px ${salmonPosition.y}px`,
+      zIndex: salmonPosition.active ? 1000 : 4,
+      scale: `${salmonPosition.hover ? 1.01 : 1}`,
+      transition: 'scale 0.3s ease'
     }"
     @mousedown="handleStart"
     @touchstart="handleStart"
