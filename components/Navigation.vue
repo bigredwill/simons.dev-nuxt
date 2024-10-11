@@ -1,15 +1,21 @@
 <template>
   <nav class="navigation">
     <ul>
-      <NuxtLink to="/about">
-        <li>About Me</li>
-      </NuxtLink>
-      <NuxtLink to="/projects">
-        <li>Projects</li>
-      </NuxtLink>
-      <NuxtLink to="/now">
-        <li>Now</li>
-      </NuxtLink>
+      <li>
+        <NuxtLink to="/about">
+          About Me
+        </NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="/projects">
+          Projects
+        </NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="/now">
+          Now
+        </NuxtLink>
+      </li>
     </ul>
   </nav>
 </template>
