@@ -5,7 +5,23 @@ useHead({
     return productCategory
       ? `${productCategory} - simons.dev`
       : 'simons.dev'
-  }
+  },
+  link: [
+    {
+      rel: 'preload',
+      as: 'font',
+      href: '/fonts/Brasilero2018Free-Regular.woff2',
+      type: 'font/woff2',
+      crossorigin: 'anonymous'
+    },
+    {
+      rel: 'preload',
+      as: 'font',
+      href: '/fonts/Brasilero2018Free-Regular.woff',
+      type: 'font/woff',
+      crossorigin: 'anonymous'
+    }
+  ]
 });
 
 useSeoMeta({
