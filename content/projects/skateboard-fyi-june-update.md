@@ -17,11 +17,17 @@ I'm committing full time to this project. June 30 is my deadline for shipping a 
 https://skateboard.fyi
 #### The goal
 To create a searchable archive of skateboarding's documented history, enabling researchers, skate nerds, and future skaters to explore decades of skateboarding culture, photography, and editorial content.
-
 #### MVP Features
 - Importing of scanned PDFs
 - Full text search for Thrasher Magazine.
 - Crowdsource platform for text correction and tagging.
+
+#### Tech Stack
+- **Frontend:** Next.js with TypeScript, Tailwind, React
+- **Backend:** PayloadCMS, PostgreSQL
+- **Infrastructure:** Self-hosted deployment using Docker, Cloudflare Zero Trust tunnels, and the Cloudflare CDN
+- **Processing Pipeline:** Google Vision API for OCR and feature detection
+
 #### Background
 The initial question that prompted this project was "how can I see all of Atiba's photos?" [Atiba](https://www.instagram.com/atibaphoto/) is a photographer, who started out documenting skateboarding in the 90's. His style was forward thinking and influenced the look and direction of lifestyle and action sports documentation. He was featured on [Epicly Later'd](https://www.youtube.com/watch?v=Qw7-hCfxRV4). 
 
