@@ -2,6 +2,7 @@
 const { page } = useContent()
 const image = page?.value?.image ?? null;
 const title = page?.value?.title ?? null;
+const url = page?.value?.url ?? null;
 let date = page?.value?.date ?? null;
 if (date) {
   // en-CA outputs in YYYY-MM-DD
@@ -15,8 +16,17 @@ if (date) {
     <!-- <ContentHeroSection v-if="image" :image="image" /> -->
     <section>
       <div class="container-inner">
-        <p class="date" v-if="date">{{ date }}</p>
         <h1>{{ page?.title }}</h1>
+        <table class="meta">
+          <tr v-if="date">
+            <td>date:</td>
+            <td>{{ date }}</td>
+          </tr>
+          <tr v-if="url">
+            <td>url:</td>
+            <td><a :href="url">{{ url }}</a></td>
+          </tr>
+        </table>
         <div class='contentContainer'>
           <ContentDoc />
         </div>
@@ -39,13 +49,14 @@ h1 {
   margin: 0 auto;
 }
 
-.date {
-  margin: 0 auto;
+.meta {
+  /* margin: 0 auto; */
   grid-column: 1 / span 12;
   color: var(--dark);
   /* -webkit-text-stroke: 1px var(--salmon); */
-  letter-spacing: .2ch;
-  font-weight: bold;
+  letter-spacing: .15ch;
+  font-weight: medium;
+  font-size: .8rem;
 }
 
 img {

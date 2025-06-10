@@ -4,129 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "2e37521f92c92e39",
+        "id": "81d49f94e2056652",
         "type": "tabs",
         "children": [
           {
-            "id": "0f9b817e508c39d5",
+            "id": "b2fbd03821a121b5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/projects/lights.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1d713361c8b9540d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/now.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3d3ad09439975012",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/projects/Signs.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0abb2a9c6e280611",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "public/attachments/osc.link.png"
-              }
-            }
-          },
-          {
-            "id": "6b1493c5fd705eb8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/Skateboarding.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a7c3d5629c19a5dd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/places/Bombay Beach.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "389a8c5248e758a6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/projects/LP-01.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fa22d95770500825",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/projects/lights.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "152dc7a4d13b1e79",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/projects/Train Otaku.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0a9390278fe68242",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/projects/Fidget Camp 2024.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 9
+        ]
       }
     ],
     "direction": "vertical"
@@ -146,7 +37,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -161,7 +54,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -169,7 +64,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -200,7 +97,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Fidget Camp 2024"
             }
           },
           {
@@ -212,7 +111,9 @@
                 "file": "content/projects/Fidget Camp 2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Fidget Camp 2024"
             }
           },
           {
@@ -223,7 +124,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -233,7 +136,9 @@
               "type": "outline",
               "state": {
                 "file": "content/projects/Fidget Camp 2024.md"
-              }
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Fidget Camp 2024"
             }
           }
         ]
@@ -253,32 +158,43 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0a9390278fe68242",
+  "active": "b2fbd03821a121b5",
   "lastOpenFiles": [
-    "public/attachments/fidget-camp-schedule.png",
+    "content/code/Integrating Supabase and Clerk Auth within Next.js pages router.md",
     "content/projects/Fidget Camp 2024.md",
-    "public/attachments/fidgetcamp-screenshot.png",
+    "content/Untitled.md",
+    "content/projects/attachments/42C8C2BA-FCAB-4C9F-921B-CBC7416C5B00_1_105_c.jpeg",
+    "content/projects/attachments/IMG_4658.jpeg.sb-8c652d3f-4q5c8E",
+    "public/attachments/IMG_4658.jpeg",
+    "content/projects/attachments/IMG_4658.jpeg.sb-8c652d3f-UHbbJk",
+    "content/projects/attachments/Screenshot 2024-06-09 at 10.22.15 Medium.jpeg",
+    "content/projects/attachments/annotated_output_video.mp4",
+    "content/projects/attachments/IMG_3103.jpeg",
+    "content/projects/attachments/IMG_3913.jpeg",
+    "public/attachments/IMG_4654.jpeg",
+    "content/projects/attachments/IMG_4654.jpeg.sb-8c652d3f-kMgQce",
+    "content/projects/attachments/IMG_4654.jpeg.sb-8c652d3f-saRqGh",
+    "content/projects/lights.md",
+    "content/now.md",
+    "content/projects/Signs.md",
+    "public/attachments/osc.link.png",
+    "content/Skateboarding.md",
+    "content/places/Bombay Beach.md",
+    "content/projects/LP-01.md",
+    "content/projects/Train Otaku.md",
+    "assets/icons/salmonIcon.svg",
+    "assets/icons/salmon.svg",
+    "assets/icons/salmon-icon.svg",
+    "components/SalmonSpawner.vue",
     "content/projects/Web.md",
     "content/projects/osc.link revamp.md",
     "content/projects/Mars College.md",
-    "content/projects/Train Otaku.md",
-    "content/now.md",
     "content/code/Nuxt.md",
     "content/projects/Build on the Block - Wedge Ramp.md",
     "content/projects/Build on the Block - Jumbotron.md",
     "content/projects/Contract - Webflow Site for AI Startup.md",
-    "content/projects/lights.md",
     "content/projects/Rainier wall light.md",
-    "content/projects/Signs.md",
-    "public/attachments/IMG_8033.jpeg",
-    "public/attachments/IMG_8034.jpeg",
-    "public/attachments/osc-link-image.png",
-    "assets/icons/brush.svg",
-    "public/attachments/osc.link.png",
     "content/projects/Bombay Beach Quarter Pipe.md",
-    "content/projects/LP-01.md",
-    "content/Skateboarding.md",
-    "public/attachments/train-otaku.jpg",
     "content/projects/Bienalle Grant/Light Piers Through.md",
     "content/projects/garden.simons.dev.md",
     "content/projects/Music/path of insanity.md",
@@ -286,19 +202,9 @@
     "content/projects/low-workbench.md",
     "content/projects/Solarpunk Community Map.md",
     "content/projects/Interpolator - Electron frontend for image-to-video.md",
-    "content/projects.md",
     "pages/projects.vue",
-    "content/freelance.md",
     "content/places",
     "content/code",
-    "public/img/og-salmon.jpg",
-    "public/img/salmon.jpg",
-    "content/08-Portfolio",
-    "areas",
-    "components/Salmon.vue",
-    "app.vue",
-    "components/home-page/NowSection.vue",
-    "components/home-page/AboutSection.vue",
-    "rename.js"
+    "content/08-Portfolio"
   ]
 }

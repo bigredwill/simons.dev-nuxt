@@ -12,7 +12,7 @@ Currently I live in [San Francisco](places/San%20Francisco.md), my hometown. Pre
 
 For work, I'm currently a freelance software developer.  I have enjoyed a good work/life balance with this, making just enough to live my life. That said, I'm currently looking for a full-time position in San Francisco, and hoping to find a good team to join.
 
-[Skateboarding](Skateboarding) is a big part of my life. It has lead me on many great adventures, kept me healthy, and provided an outlet when everything else fails (or seems to). The diy ethos and vibrant community bring me so much joy.
+[Skateboarding](Skateboarding.md) is a big part of my life. It has lead me on many great adventures, kept me healthy, and provided an outlet when everything else fails (or seems to). The diy ethos and vibrant community bring me so much joy.
 
 Art - am I an artist? I make art. I tried writing an [Artist Statement](thoughts/Artist%20Statement%20(work%20in%20progress).md) to apply for a grant. My mediums are multi-media ~~ wood, video, sculpture, sound, code, light.
 
