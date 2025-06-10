@@ -11,10 +11,66 @@
             "id": "b2fbd03821a121b5",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "content/projects/skateboard-fyi-june-update.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "skateboard-fyi-june-update"
+            }
+          },
+          {
+            "id": "f8cbda127718698c",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "public/attachments/banner-sk8.png"
+              },
+              "icon": "lucide-image",
+              "title": "banner-sk8"
+            }
+          },
+          {
+            "id": "a384a6c11fd88574",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/projects/Fidget Camp 2024.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Fidget Camp 2024"
+            }
+          },
+          {
+            "id": "d7a9171dfcb862a2",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "public/attachments/skateboard-fyi-dark-square.png"
+              },
+              "icon": "lucide-image",
+              "title": "skateboard-fyi-dark-square"
+            }
+          },
+          {
+            "id": "9bfb4e5d6739fb25",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/projects/Music/hermeto amen.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "hermeto amen"
             }
           }
         ]
@@ -36,7 +92,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "byModifiedTime",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -160,8 +217,23 @@
   },
   "active": "b2fbd03821a121b5",
   "lastOpenFiles": [
-    "content/code/Integrating Supabase and Clerk Auth within Next.js pages router.md",
+    "public/attachments/banner-sk8.png",
+    "content/projects/skateboard-fyi-june-update.md",
+    "content/projects/Music/hermeto amen.md",
     "content/projects/Fidget Camp 2024.md",
+    "public/attachments/skateboard-fyi-dark-square.png",
+    "public/attachments/sk8-fyi-logo.png",
+    "public/attachments/IMG_3239.jpeg",
+    "public/attachments/IMG_3215.jpeg",
+    "content/projects/June 2024 Everyday Challenge - Music Production..md",
+    "content/projects/Music/path of insanity.md",
+    "content/projects/Web.md",
+    "content/projects/Build on the Block - Wedge Ramp.md",
+    "content/projects/Interpolator - Electron frontend for image-to-video.md",
+    "content/projects/LP-01.md",
+    "content/projects/Train Otaku.md",
+    "content/projects/Mars College.md",
+    "content/code/Integrating Supabase and Clerk Auth within Next.js pages router.md",
     "content/Untitled.md",
     "content/projects/attachments/42C8C2BA-FCAB-4C9F-921B-CBC7416C5B00_1_105_c.jpeg",
     "content/projects/attachments/IMG_4658.jpeg.sb-8c652d3f-4q5c8E",
@@ -171,37 +243,21 @@
     "content/projects/attachments/annotated_output_video.mp4",
     "content/projects/attachments/IMG_3103.jpeg",
     "content/projects/attachments/IMG_3913.jpeg",
-    "public/attachments/IMG_4654.jpeg",
     "content/projects/attachments/IMG_4654.jpeg.sb-8c652d3f-kMgQce",
     "content/projects/attachments/IMG_4654.jpeg.sb-8c652d3f-saRqGh",
     "content/projects/lights.md",
     "content/now.md",
     "content/projects/Signs.md",
-    "public/attachments/osc.link.png",
     "content/Skateboarding.md",
     "content/places/Bombay Beach.md",
-    "content/projects/LP-01.md",
-    "content/projects/Train Otaku.md",
-    "assets/icons/salmonIcon.svg",
-    "assets/icons/salmon.svg",
-    "assets/icons/salmon-icon.svg",
     "components/SalmonSpawner.vue",
-    "content/projects/Web.md",
     "content/projects/osc.link revamp.md",
-    "content/projects/Mars College.md",
     "content/code/Nuxt.md",
-    "content/projects/Build on the Block - Wedge Ramp.md",
     "content/projects/Build on the Block - Jumbotron.md",
     "content/projects/Contract - Webflow Site for AI Startup.md",
     "content/projects/Rainier wall light.md",
     "content/projects/Bombay Beach Quarter Pipe.md",
     "content/projects/Bienalle Grant/Light Piers Through.md",
-    "content/projects/garden.simons.dev.md",
-    "content/projects/Music/path of insanity.md",
-    "content/projects/Music/hermeto amen.md",
-    "content/projects/low-workbench.md",
-    "content/projects/Solarpunk Community Map.md",
-    "content/projects/Interpolator - Electron frontend for image-to-video.md",
     "pages/projects.vue",
     "content/places",
     "content/code",

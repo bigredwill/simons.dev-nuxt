@@ -1,6 +1,7 @@
 ---
 date: 2024-05-30
 url: https://www.mars.college/
+featured: false
 ---
 
 >Mars College is a three-month educational program, R&D lab, and off-grid residential community dedicated to cultivating a low-cost, high-tech lifestyle.
