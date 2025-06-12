@@ -47,3 +47,6 @@ Let me get this out of the way: I do not intend to make money from skateboard.fy
 
 I'm not certain what the copyright is on old magazines. Some of the magazines are out of print. This is tbd. For now, it's just a personal project.
 
+
+#### What's Next?
+I'd like to get the MVP done by the end of the month. That means working end-to-end with just the Thrasher archive.
