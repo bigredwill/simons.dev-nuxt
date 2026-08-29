@@ -1,0 +1,20 @@
+---
+import { getEntry, render } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+
+const home = await getEntry("content", "index");
+if (!home) throw new Error("content/index.md not found");
+
+const { Content } = await render(home);
+---
+
+<Layout
+  title={home.data.title}
+  description={home.data.description ?? undefined}
+>
+  <section class="mx-auto w-full max-w-3xl px-4 py-8 sm:px-6">
+    <div class="prose">
+      <Content />
+    </div>
+  </section>
+</Layout>

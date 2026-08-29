@@ -1,0 +1,188 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Brasilero";
+  src:
+    url("/fonts/Brasilero2018Free-Regular.woff2") format("woff2"),
+    url("/fonts/Brasilero2018Free-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Departure Mono";
+  src:
+    url("/fonts/DepartureMono-Regular.woff2") format("woff2"),
+    url("/fonts/DepartureMono-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-mono:
+    "Departure Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-display: "Brasilero", var(--font-sans);
+
+  --color-bg: #faf8f8;
+  --color-surface: #f1edea;
+  --color-ink: #2b2b2b;
+  --color-muted: #4e4e4e;
+  --color-dim: #8b8580;
+  --color-line: #2b2b2b;
+  --color-salmon: #ff8465;
+  --color-salmon-deep: #c2410c;
+  --color-water: #3c67e3;
+  --color-hl: #fff23688;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    background-color: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-size: 0.9375rem;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: lowercase;
+    color: var(--color-ink);
+    text-shadow: 2px 2px 0 var(--color-salmon);
+    line-height: 1.15;
+  }
+
+  ::selection {
+    background: var(--color-salmon);
+    color: var(--color-bg);
+  }
+
+  a {
+    color: var(--color-salmon-deep);
+    text-decoration: underline;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.15em;
+  }
+
+  a:hover {
+    color: var(--color-salmon);
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  mark.hl {
+    background: color-mix(in srgb, #93c5fd 50%, transparent);
+    padding: 0.1em 0.35em;
+    border-radius: 2px;
+  }
+
+  code {
+    background-color: var(--color-hl);
+    font-size: 0.85em;
+    padding: 0.1em 0.25em;
+  }
+
+  pre {
+    overflow-x: auto;
+    padding: 0.75rem 1rem;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    border: 1px solid var(--color-line);
+  }
+
+  pre code {
+    background: none;
+    padding: 0;
+  }
+
+  blockquote {
+    border-left: 3px solid var(--color-salmon);
+    padding: 0.4rem 0.75rem;
+    margin: 0.75rem 0;
+    background-color: #fff;
+    color: var(--color-ink);
+    font-size: 0.9em;
+  }
+
+  /* Label utility shared with the sk8.fyi UI language */
+  .label {
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--color-muted);
+  }
+}
+
+/* Compact prose for rendered markdown */
+.prose {
+  max-width: 65ch;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+}
+
+.prose h1 {
+  font-size: clamp(1.75rem, 6vw, 2.75rem);
+  margin: 0 0 0.75rem;
+}
+
+.prose h2 {
+  font-size: clamp(1.35rem, 5vw, 1.9rem);
+  margin: 1.75rem 0 0.5rem;
+}
+
+.prose h3,
+.prose h4 {
+  font-size: clamp(1.1rem, 4vw, 1.35rem);
+  margin: 1.5rem 0 0.4rem;
+}
+
+.prose p {
+  margin: 0 0 0.9em;
+}
+
+.prose ul,
+.prose ol {
+  margin: 0 0 0.9em;
+  padding-left: 1.25rem;
+}
+
+.prose li {
+  margin: 0.2em 0;
+}
+
+.prose img,
+.prose video {
+  margin: 1rem 0;
+  border: 1px solid color-mix(in srgb, var(--color-line) 20%, transparent);
+}
+
+.prose hr {
+  border: none;
+  border-top: 1px solid color-mix(in srgb, var(--color-line) 25%, transparent);
+  margin: 1.5rem 0;
+}

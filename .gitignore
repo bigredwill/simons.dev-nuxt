@@ -1,11 +1,9 @@
 node_modules
-*.log*
-.nuxt
-.nitro
-.cache
-.output
-.data
-.env
 dist
-.vercel
+.astro
+.wrangler
+*.log*
+.cache
+.env
+.env.*
 .DS_Store
