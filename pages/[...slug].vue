@@ -1,12 +1,20 @@
 <script setup lang="ts">
-const { page } = useContent()
+const route = useRoute();
+const { data: page } = await useAsyncData(route.path, () =>
+  queryCollection("content").path(route.path).first(),
+);
+
+useSeoMeta({
+  title: page.value?.title,
+  description: page.value?.description,
+});
 const image = page?.value?.image ?? null;
 const title = page?.value?.title ?? null;
 const url = page?.value?.url ?? null;
 let date = page?.value?.date ?? null;
 if (date) {
   // en-CA outputs in YYYY-MM-DD
-  date = new Date(date).toLocaleDateString('en-CA');
+  date = new Date(date).toLocaleDateString("en-CA");
 }
 </script>
 
@@ -24,11 +32,14 @@ if (date) {
           </tr>
           <tr v-if="url">
             <td>url:</td>
-            <td><a :href="url">{{ url }}</a></td>
+            <td>
+              <a :href="url">{{ url }}</a>
+            </td>
           </tr>
         </table>
-        <div class='contentContainer'>
-          <ContentDoc />
+        <div class="contentContainer">
+          <ContentRenderer v-if="page" :value="page" class="prose m-auto" />
+          <div v-else>Page not found</div>
         </div>
       </div>
     </section>
@@ -54,9 +65,9 @@ h1 {
   grid-column: 1 / span 12;
   color: var(--dark);
   /* -webkit-text-stroke: 1px var(--salmon); */
-  letter-spacing: .15ch;
+  letter-spacing: 0.15ch;
   font-weight: medium;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 img {

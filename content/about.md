@@ -6,7 +6,7 @@ Hey - I'm Will and this is my website.
 
 ![](../public/attachments/scan117684.jpeg)
 
-I'm interested in a lot of things. This site contains a portfolio centered around documentation of projects, findings, and curiosities. It's a visual manifestation of an [Obsidian vault](code/simons.dev%20-%20Nuxt%20Content%20+%20Obsidian.md) paired with [Nuxt](code/Nuxt.md).
+I'm interested in a lot of things. This site contains a portfolio centered around documentation of projects, findings, and curiosities. It's a visual manifestation of an [Obsidian vault](2024-10-18-simons-dev-Nuxt-Content-Obsidian.md) paired with [Nuxt](code/Nuxt.md).
 
 Currently I live in [San Francisco](places/San%20Francisco.md), my hometown. Previously I lived in Seattle for 6 years. Between then and now I lived in [Bombay Beach, CA](places/Bombay%20Beach.md) for two winters. I [travelled](areas/Adventure.md) a bit between those two winters.
 

@@ -1,36 +1,30 @@
 <template>
-    <header class="header container">
-        <div class="header-content">
-            <!-- <NuxtLink to="/" class="name">Will Simons</NuxtLink> -->
-            <Navigation />
-        </div>
-    </header>
+    <Header class="header" />
+    <main class="main prose">
+        <h1 class="name">Will Simons</h1>
+        <img
+            alt="Avatar for Will Simons"
+            loading="lazy"
+            decoding="async"
+            src="/img/avatar-square.jpg"
+            width="32"
+            height="32"
+            style="border-radius: 4px; display: inline-block"
+        />
+        is currently building an online home for printed skateboard history at
+        <span style="font-size: 1.5em">🛹 </span>
+        <a href="https://skateboard.fyi/" class="nowrap">skateboard.fyi</a>.
+    </main>
 </template>
 
-<style scoped>
-.header {
-    max-width: var(--max-width);
-    margin: 0 auto;
-}
-
-.header-content {
-    grid-column: span 12;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+<style>
+.main {
 }
 
 .name {
-    font-family: "Brasilero2018Free-Regular";
-    font-size: 4rem;
-    font-size: clamp(1.2rem, 9vw, 4rem);
-    padding-bottom: 1rem;
-
-    /* brasilero lowercase looks better for this title */
-    text-transform: lowercase;
-    flex: 1 0 auto;
+    font-size: 2em;
+    /* display: inline; */
+    padding-right: 4px;
     text-decoration: none;
     -webkit-text-stroke: 2px var(--dark);
     color: var(--light);
