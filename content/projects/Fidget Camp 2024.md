@@ -21,7 +21,7 @@ My contribution was Spooky Fidget at a Distance (a play on [spooky action at a d
 
 To make things fun, I got a light up fidget spinner, and built an enclosure using CAD (cardboard-aided-design) and a two way mirror.
 
-![](../../public/attachments/IMG_3239.jpeg)
+![](../../public/attachments/IMG_3239.avif)
 
-![](../../public/attachments/IMG_3215.jpeg)
+![](../../public/attachments/IMG_3215.avif)
 

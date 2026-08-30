@@ -4,7 +4,7 @@ date: 2024-10-01
 
 Hey - I'm Will and this is my website.
 
-![](../public/attachments/scan117684.jpeg)
+![](../public/attachments/scan117684.avif)
 
 I'm interested in a lot of things. This site contains a portfolio centered around documentation of projects, findings, and curiosities. It's a visual manifestation of an [Obsidian vault](2024-10-18-simons-dev-Nuxt-Content-Obsidian.md) paired with [Nuxt](code/Nuxt.md).
 

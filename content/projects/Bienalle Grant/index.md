@@ -12,10 +12,10 @@ I currently live at and attend Mars College, an off-grid pop-up college in the S
 
 ##  Proposals
 [Scorpion Hotel](Scorpion%20Hotel.md)
-> ![](../../../public/attachments/086c8732c7fd0b7b4fb8b14c6d36ed5ab4887017b91e56e01a127daa5e902838%201.jpg)
+> ![](../../../public/attachments/086c8732c7fd0b7b4fb8b14c6d36ed5ab4887017b91e56e01a127daa5e902838-1.avif)
 
 
 [Light Piers Through](Light%20Piers%20Through.md)
-![](../../../public/attachments/926490bafad91dd969c76d7e2179c8199d980e929c66ddf328f8964db3ed5eca.jpg)
+![](../../../public/attachments/926490bafad91dd969c76d7e2179c8199d980e929c66ddf328f8964db3ed5eca.avif)
 
-![](../../../public/attachments/DB7C56EB-C7D8-4554-BBE3-AA3000593BB9_1_105_c-1.jpeg)
+![](../../../public/attachments/DB7C56EB-C7D8-4554-BBE3-AA3000593BB9_1_105_c-1.avif)

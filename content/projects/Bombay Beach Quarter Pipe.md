@@ -3,7 +3,7 @@ date: 2024-03-07
 tags:
   - ramp
   - skateboarding
-image: /attachments/IMG_3094.jpeg
+image: /attachments/IMG_3094.avif
 featured: true
 ---
 We built a giant concrete skate ramp on the beach of Salton Sea next to Bombay Beach.
@@ -24,11 +24,11 @@ He had a guy - that guy is Clayton Graul, a prolific DIY builder and the masterm
 I said I'm down, if you show up with some materials and ready to go, I'll put in work.
 
 So now there is a dope skate ramp on the beach in Bombay Beach. To be continued..
-![](../../public/attachments/IMG_3094.jpeg)
-![](../../public/attachments/IMG_3103-1.jpeg)
+![](../../public/attachments/IMG_3094.avif)
+![](../../public/attachments/IMG_3103-1.avif)
 ![](../../public/attachments/IMG_3280.mov)
 
-![](../../public/attachments/IMG_3074.jpeg)
+![](../../public/attachments/IMG_3074.avif)
 
 
 

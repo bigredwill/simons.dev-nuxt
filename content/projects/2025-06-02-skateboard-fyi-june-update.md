@@ -4,12 +4,12 @@ tags:
   - code
   - work
 featured: true
-image: attachments/skateboard-fyi-dark-square.png
+image: attachments/skateboard-fyi-dark-square.avif
 description: Creating a searchable archive of skateboarding's documented history, enabling researchers, skate nerds, and future skaters to explore decades of skateboarding culture, photography, and editorial content.
 title: skateboard.fyi - June 2025 Update
 ---
 
-![](../../public/attachments/banner-sk8.png)
+![](../../public/attachments/banner-sk8.avif)
 
 
 I'm committing full time to this project. June 30 is my deadline for shipping a functioning MVP.

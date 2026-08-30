@@ -5,6 +5,7 @@
     "dev": "astro dev --host",
     "build": "astro build",
     "preview": "astro preview",
+    "optimize:images": "node scripts/optimize-images.mjs",
     "astro": "astro"
   },
   "dependencies": {

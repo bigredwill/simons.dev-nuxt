@@ -3,7 +3,7 @@ title: Build on the Block - Wedge Ramp
 date: 2023-07-22
 tags:
   - ramp
-image: /attachments/Screen-Shot-2023-07-18-at-6.15.08-PM.png
+image: /attachments/Screen-Shot-2023-07-18-at-6.15.08-PM.avif
 featured: true
 ---
 I was commissioned to build a ramp for the Build on the Block contest in Seattle. My usual ramp building process is to plan on paper, and usually improvise on the spot with construction. Since I was being paid (really just material cost plus a burger) and I was using new material, I decided to be more thorough. 
@@ -14,13 +14,13 @@ I was commissioned to build a ramp for the Build on the Block contest in Seattle
 Above is a side-by-side of the 3d design and a 3d scan of the built object. Dimensions are correct! (The final digital design is the all purple).
 
 
-![](../../public/attachments/Pasted-image-20240302080016.png)
+![](../../public/attachments/Pasted-image-20240302080016.avif)
 
 ## Design
 
 The project started with some hand drawn sketches. I took these in to Sketchup and created a 3d mockup. This allowed me to easily iterate and modify dimensions, angles, etc. as well as plan for a bill of materials.
 
-![](../../public/attachments/71167889328__F6CAC678-C2C2-41F3-98D3-35212DEF2162.jpeg)
+![](../../public/attachments/71167889328__F6CAC678-C2C2-41F3-98D3-35212DEF2162.avif)
 
 ## Angle Iron
 I purchased 3" by 5" steel angle iron - the issue with standard 2" or 1.5" that you get from a hardware store is that it doesn't provide a surface for board tails or wheels to slide against. Since there was a budget, I went with some more serious angle.
@@ -33,9 +33,9 @@ Additionally, I drilled holes and threaded the angle iron so that I could bolt i
 ## Dimensions
 
 I built this to fit in my small 2012 Ford Transit Connect van. The fit was perfect.
-![](../../public/attachments/Screen-Shot-2023-07-18-at-6.15.08-PM.png)
+![](../../public/attachments/Screen-Shot-2023-07-18-at-6.15.08-PM.avif)
 
-![](../../public/attachments/71168423431__53571CE9-5588-4735-9A84-F14F55C2F973.jpeg)
+![](../../public/attachments/71168423431__53571CE9-5588-4735-9A84-F14F55C2F973.avif)
 
 
 ## Learnings

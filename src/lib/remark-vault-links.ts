@@ -3,6 +3,7 @@ import { visit } from "unist-util-visit";
 import type { Root } from "mdast";
 import type { VFile } from "vfile";
 import { pathToSlug } from "./slugs";
+import { toAvif } from "./avif";
 
 /**
  * Ported from the old Nuxt `content:file:beforeParse` hook:
@@ -40,7 +41,7 @@ export function remarkVaultLinks() {
       const url = node.url ?? "";
       // `../../public/attachments/x.jpg` -> `/attachments/x.jpg`
       const stripped = url.replace(/^.*?\/public\//, "/");
-      if (stripped !== url) node.url = stripped;
+      node.url = toAvif(stripped);
     });
   };
 }

@@ -16,6 +16,6 @@ Solar lights for an abandoned pier. Sink 4x4s in to water, with solar activated 
 - 128' waterproof led strips
 - Perhaps some rebar or ground screws to secure the posts upright in the water
 
-![](../../../public/attachments/49B0D0EC-0844-4F51-AE28-B654E841531A_1_105_c-1.jpeg)
+![](../../../public/attachments/49B0D0EC-0844-4F51-AE28-B654E841531A_1_105_c-1.avif)
 
-![](../../../public/attachments/6367CACB-52AC-4B22-8E86-093A3EE501A6_1_105_c-1.jpeg)
+![](../../../public/attachments/6367CACB-52AC-4B22-8E86-093A3EE501A6_1_105_c-1.avif)

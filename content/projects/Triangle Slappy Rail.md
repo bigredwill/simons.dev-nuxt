@@ -5,6 +5,6 @@ tags:
   - skateboarding
 ---
 
-![](../../public/attachments/IMG_9770.jpeg)
+![](../../public/attachments/IMG_9770.avif)
 
 The circular tubing was recycled from a broken rail I salvaged at [the courts in Seattle](../places/the%20courts%20in%20Seattle.md). 

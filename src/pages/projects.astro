@@ -4,6 +4,7 @@ import Layout from "../layouts/Layout.astro";
 import ProjectGrid from "../components/ProjectGrid";
 import type { ProjectItem } from "../components/ProjectGrid";
 import { entryTitle, formatDate } from "../lib/entries";
+import { toAvif } from "../lib/avif";
 
 const entries = await getCollection(
   "content",
@@ -17,7 +18,7 @@ const projects: ProjectItem[] = entries
     title: entryTitle(entry),
     date: formatDate(entry.data.date),
     tags: entry.data.tags ?? [],
-    image: entry.data.image ?? null,
+    image: entry.data.image ? toAvif(entry.data.image) : null,
     description: entry.data.description ?? null,
   }));
 

@@ -5,7 +5,7 @@ tags:
   - everyday
   - music
 featured: true
-image: /attachments/Screenshot-2024-06-20-at-23.47.41.png
+image: /attachments/Screenshot-2024-06-20-at-23.47.41.avif
 ---
 **Goal**: Make a track everyday in June.
 
