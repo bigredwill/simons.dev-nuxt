@@ -11,6 +11,7 @@ const content = defineCollection({
   schema: z
     .object({
       title: z.string().optional(),
+      headline: z.string().optional(),
       description: z.string().nullish(),
       date: z.coerce.date().optional(),
       tags: z

@@ -4,17 +4,167 @@ import Layout from "../layouts/Layout.astro";
 
 const home = await getEntry("content", "index");
 if (!home) throw new Error("content/index.md not found");
-
 const { Content } = await render(home);
+
+const now = await getEntry("content", "now");
+const NowContent = now ? (await render(now)).Content : null;
+
+// Headline is vault-editable via `headline:` in content/index.md frontmatter.
+// Split on "&" so each clause gets its own line, as in the original hero.
+const headline = home.data.headline ?? "Software Dev & Multi-Potentialist & Builder";
+const lines = headline
+  .split("&")
+  .map((part) => part.trim())
+  .filter(Boolean);
 ---
 
-<Layout
-  title={home.data.title}
-  description={home.data.description ?? undefined}
->
-  <section class="mx-auto w-full max-w-3xl px-4 py-8 sm:px-6">
-    <div class="prose">
-      <Content />
+<Layout title={home.data.title} description={home.data.description ?? undefined}>
+  <section class="hero">
+    <div class="hero-text">
+      <h1 class="hero-title">
+        {
+          lines.map((line, i) => (
+            <>
+              {line}
+              {i < lines.length - 1 && <span class="amp"> &amp;</span>}
+              {i < lines.length - 1 && <br />}
+            </>
+          ))
+        }
+      </h1>
+      <div class="prose prose-lead">
+        <Content />
+      </div>
     </div>
+    <img
+      class="hero-salmon"
+      src="/img/salmon-hero.avif"
+      alt=""
+      width="1000"
+      height="1000"
+      fetchpriority="high"
+      decoding="async"
+    />
   </section>
+
+  {
+    NowContent && (
+      <section class="now-band">
+        <div class="now-inner">
+          <h2 id="now" class="now-title">Now</h2>
+          <div class="prose now-prose">
+            <NowContent />
+          </div>
+          <a class="now-link" href="/now">More &rarr;</a>
+        </div>
+      </section>
+    )
+  }
 </Layout>
+
+<style>
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 1rem;
+    max-width: 78rem;
+    margin: 0 auto;
+    padding: 3.5rem 1rem 3.5rem;
+  }
+
+  @media (min-width: 640px) {
+    .hero {
+      padding: 5rem 1.5rem 5rem;
+    }
+  }
+
+  @media (max-width: 899px) {
+    .hero {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 0;
+    }
+  }
+
+  .hero-title {
+    margin: 0 0 1.75rem;
+    /* Capped so each "&"-separated clause stays on one line */
+    font-size: clamp(2.25rem, 5.6vw, 4.25rem);
+    line-height: 1.04;
+    letter-spacing: 0.02em;
+    text-shadow: 0.05em 0.05em 0 var(--color-salmon);
+  }
+
+  .amp {
+    color: var(--color-salmon-deep);
+    text-shadow: none;
+  }
+
+  .hero-salmon {
+    width: 100%;
+    max-width: 26rem;
+    height: auto;
+    justify-self: end;
+    pointer-events: none;
+    transform: rotate(-8deg);
+  }
+
+  @media (max-width: 899px) {
+    .hero-salmon {
+      order: -1;
+      width: 58%;
+      margin: 0 -0.5rem 1.5rem auto;
+    }
+  }
+
+  .now-band {
+    background-color: var(--color-ink);
+    color: var(--color-bg);
+    padding: 2.5rem 1rem 3rem;
+  }
+
+  @media (min-width: 640px) {
+    .now-band {
+      padding: 3.5rem 1.5rem 4rem;
+    }
+  }
+
+  .now-inner {
+    max-width: 78rem;
+    margin: 0 auto;
+  }
+
+  .now-title {
+    margin: 0 0 1rem;
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    color: var(--color-bg);
+    text-shadow: 0.05em 0.05em 0 var(--color-salmon);
+  }
+
+  .now-link {
+    display: inline-block;
+    margin-top: 0.75rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--color-salmon);
+  }
+</style>
+
+<style is:global>
+  /* Dark band needs its own prose colors */
+  .now-prose,
+  .now-prose p,
+  .now-prose li {
+    color: var(--color-bg);
+  }
+
+  .now-prose a {
+    color: var(--color-salmon);
+  }
+
+  .now-prose a:hover {
+    color: var(--color-bg);
+  }
+</style>
