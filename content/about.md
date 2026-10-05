@@ -2,13 +2,12 @@
 date: 2024-10-01
 ---
 
-Hey - I'm Will and this is my website.
+Hey - I'm Will and this is my website. Right now I'm a solo-founder building [skateboard.fyi](projects/skateboard.fyi/index.md)
 
 ![](../public/attachments/scan117684.avif)
 
-I'm interested in a lot of things. This site contains a portfolio centered around documentation of projects, findings, and curiosities. It's a visual manifestation of an [Obsidian vault](2024-10-18-simons-dev-Nuxt-Content-Obsidian.md) paired with [Nuxt](code/Nuxt.md).
 
-Currently I live in [San Francisco](places/San%20Francisco.md), my hometown. Previously I lived in Seattle for 6 years. Between then and now I lived in [Bombay Beach, CA](places/Bombay%20Beach.md) for two winters. I [travelled](areas/Adventure.md) a bit between those two winters.
+Currently I live in [San Francisco](places/San%20Francisco.md), my hometown. Previously I lived in Seattle for 6 years. Between then and now I lived in [Bombay Beach, CA](places/Bombay%20Beach.md) for 4 winters while I attended the off-grid high-tech low-cost popup college [Mars College](projects/Mars%20College.md).
 
 For work, I'm currently a freelance software developer.  I have enjoyed a good work/life balance with this, making just enough to live my life. That said, I'm currently looking for a full-time position in San Francisco or remote, and hoping to find a good team to join.
 

@@ -1,0 +1,13 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import { entryTitle, formatDate } from "../lib/entries";
+const posts = (await getCollection("content", entry => entry.id.startsWith("posts/"))).sort((a,b) => (b.data.date?.getTime() ?? 0) - (a.data.date?.getTime() ?? 0));
+---
+<Layout title="Notes" description="Observations, questions, and work in progress from the studio.">
+  <section class="shell page-intro"><span class="eyebrow">From the workbench</span><h1>Loose threads.</h1><p>Questions, observations, and things still taking shape. A place to think out loud without having the whole answer.</p></section>
+  <section class="shell note-list">
+    <a class="note-row" href="/notes/studio-works"><span class="eyebrow">01 / Studio journal</span><div><h2>What should I make?</h2><p>Beginning STUDIO WORKS, and looking for the ideas I want to keep working on.</p></div><span aria-hidden="true">↗</span></a>
+    {posts.map(post => <a class="note-row" href={`/${post.id}`}><span class="eyebrow">{formatDate(post.data.date) ?? "From the archive"}</span><div><h2>{entryTitle(post)}</h2><p>{post.data.description ?? "A note from Will’s personal archive."}</p></div><span aria-hidden="true">↗</span></a>)}
+  </section>
+</Layout>

@@ -1,5 +1,6 @@
 ---
 title: "After this break, I return to code."
+date: 2025-06-26
 tags:
  - code
 ---

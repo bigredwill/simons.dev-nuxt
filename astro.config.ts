@@ -9,7 +9,19 @@ import { remarkHighlight } from "./src/lib/remark-highlight";
 export default defineConfig({
   site: "https://simons.dev",
   output: "static",
-  integrations: [preact()],
+  integrations: [
+    preact(),
+    {
+      name: "local-studio-admin",
+      hooks: {
+        "astro:config:setup": ({ command, injectRoute }) => {
+          if (command === "dev") {
+            injectRoute({ pattern: "/admin", entrypoint: "./src/dev/Admin.astro" });
+          }
+        },
+      },
+    },
+  ],
   markdown: {
     remarkPlugins: [remarkVaultLinks, remarkHighlight],
     shikiConfig: {
