@@ -5,7 +5,7 @@ Built with [Quartz](https://quartz.jzhao.xyz/). It's a static site generator for
 
 I have Quartz set up to publish a folder within my Obsidian vault. The vault is just a folder on my computer. The file based workflow of Obsidian makes it simple to use these notes for other things, like hosting a website. 
 
-![](../../public/attachments/Pasted-image-20240623110112.png)
+![](../../public/attachments/Pasted-image-20240623110112.avif)
 
 This page is called `This Website.md` and lives in the Projects folder.
 

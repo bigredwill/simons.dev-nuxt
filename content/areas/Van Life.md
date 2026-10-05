@@ -3,7 +3,7 @@ I have had vans since 2016. I have had periods of #vanlife but I usually use the
 ## Current Setup
 **2012 Ford Transit Connect**<br/>
 MidJourney rendering of a Ford Transit Connect
-![](../../public/attachments/red_one_ford_transit_connect_very_small_4b519e1f-0ede-4601-b820-e0c132db97ce-Large.jpeg)
+![](../../public/attachments/red_one_ford_transit_connect_very_small_4b519e1f-0ede-4601-b820-e0c132db97ce-Large.avif)
 
 ## Past
 - 1987 Volkswagen Vanagon

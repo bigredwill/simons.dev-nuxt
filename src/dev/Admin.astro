@@ -1,0 +1,145 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { createMarkdownProcessor } from "@astrojs/markdown-remark";
+import portfolioSuggestions from "../../PORTFOLIO-SUGGESTIONS.md?raw";
+import studioDirection from "../../STUDIO-DIRECTION.md?raw";
+
+const markdown = await createMarkdownProcessor();
+const documents = await Promise.all([
+  { title: "Studio direction", filename: "STUDIO-DIRECTION.md", source: studioDirection },
+  { title: "Portfolio suggestions", filename: "PORTFOLIO-SUGGESTIONS.md", source: portfolioSuggestions },
+].map(async document => ({ ...document, html: (await markdown.render(document.source)).code })));
+const groups = [
+  { title: "Studio direction", tasks: [
+    ["name", "Decide whether Simons Development Labs is the studio name."],
+    ["selection", "Choose the three projects that best represent the studio I want to build."],
+    ["intro", "Rewrite the studio introduction in my own words."],
+  ] },
+  { title: "Work", tasks: [
+    ["captions", "Review the draft project captions and selected images."],
+    ["skateboard", "Write skateboard.fyi: what I made, why, and what I’m exploring."],
+    ["light", "Write LP–01: the found post, the build, and what could come next."],
+    ["third", "Finish one more selected project with a few captioned images."],
+  ] },
+  { title: "Notes & finishing touches", tasks: [
+    ["journal", "Replace the draft STUDIO WORKS entry with my own first note."],
+    ["links", "Simplify links as I revise older writing."],
+    ["contact", "Choose a preferred contact link for the studio."],
+    ["mobile", "Review Work, Studio, and Notes on my phone."],
+  ] },
+];
+---
+<Layout title="Studio checklist">
+  <section class="shell page-intro"><span class="eyebrow">Local development only</span><h1>On the workbench.</h1><p>A small checklist for bringing the studio site into focus. Progress and added tasks stay in this browser.</p></section>
+  <section class="shell checklist">
+    <p id="progress" role="status" aria-live="polite"></p>
+    <p id="storage-warning" hidden>Browser storage is unavailable. Changes will last only until you reload.</p>
+    <div id="task-groups">
+      {groups.map(group => <section><h2>{group.title}</h2><ul>{group.tasks.map(([id, label]) => <li><label><input type="checkbox" data-task={id} /><span>{label}</span></label></li>)}</ul></section>)}
+      <section><h2>My additions</h2><ul id="custom-tasks"></ul></section>
+    </div>
+    <form id="add-task"><label for="task-text" class="eyebrow">Add a task</label><div class="add-row"><input id="task-text" name="task" required maxlength="300" placeholder="Something to work on…" /><button type="submit">Add</button></div></form>
+  </section>
+  <section class="shell reference-documents" aria-labelledby="reference-heading">
+    <h2 id="reference-heading">Reference documents</h2>
+    <p>Rendered from the Markdown files in the project root. Edit those files to update these notes.</p>
+    {documents.map(document => (
+      <details>
+        <summary>{document.title}<span class="eyebrow">{document.filename}</span></summary>
+        <article class="prose document-body" set:html={document.html} />
+      </details>
+    ))}
+  </section>
+</Layout>
+<script>
+  const key = "simons-studio-todos-v1";
+  type Task = { id: string; text: string };
+  let checked: string[] = [];
+  let custom: Task[] = [];
+  const warning = document.querySelector<HTMLElement>("#storage-warning")!;
+  try {
+    const saved = JSON.parse(localStorage.getItem(key) ?? "{}");
+    if (Array.isArray(saved.checked)) checked = saved.checked.filter((id: unknown) => typeof id === "string");
+    if (Array.isArray(saved.custom)) custom = saved.custom.filter((task: Task) => task && typeof task.id === "string" && typeof task.text === "string");
+  } catch { warning.hidden = false; }
+  const groups = document.querySelector<HTMLElement>("#task-groups")!;
+  const list = document.querySelector<HTMLUListElement>("#custom-tasks")!;
+  function update() {
+    const inputs = groups.querySelectorAll<HTMLInputElement>("input[data-task]");
+    const completed = [...inputs].filter(input => input.checked).length;
+    document.querySelector("#progress")!.textContent = `${completed} of ${inputs.length} tasks complete`;
+    try { localStorage.setItem(key, JSON.stringify({ checked, custom })); }
+    catch { warning.hidden = false; }
+  }
+  function renderCustom() {
+    list.replaceChildren();
+    for (const task of custom) {
+      const item = document.createElement("li");
+      const label = document.createElement("label");
+      const input = document.createElement("input");
+      input.type = "checkbox";
+      input.dataset.task = task.id;
+      input.checked = checked.includes(task.id);
+      const text = document.createElement("span");
+      text.textContent = task.text;
+      const remove = document.createElement("button");
+      remove.type = "button";
+      remove.textContent = "Remove";
+      remove.setAttribute("aria-label", `Remove task: ${task.text}`);
+      remove.addEventListener("click", () => {
+        custom = custom.filter(value => value.id !== task.id);
+        checked = checked.filter(id => id !== task.id);
+        renderCustom();
+        update();
+        document.querySelector<HTMLInputElement>("#task-text")!.focus();
+      });
+      label.append(input, text);
+      item.append(label, remove);
+      list.append(item);
+    }
+  }
+  for (const input of groups.querySelectorAll<HTMLInputElement>("input[data-task]")) input.checked = checked.includes(input.dataset.task!);
+  renderCustom();
+  update();
+  groups.addEventListener("change", event => {
+    const input = event.target;
+    if (!(input instanceof HTMLInputElement) || !input.dataset.task) return;
+    checked = checked.filter(id => id !== input.dataset.task);
+    if (input.checked) checked.push(input.dataset.task);
+    update();
+  });
+  document.querySelector<HTMLFormElement>("#add-task")!.addEventListener("submit", event => {
+    event.preventDefault();
+    const input = document.querySelector<HTMLInputElement>("#task-text")!;
+    const text = input.value.trim();
+    if (!text) return;
+    custom.push({ id: `custom-${crypto.randomUUID()}`, text });
+    input.value = "";
+    renderCustom();
+    update();
+    input.focus();
+  });
+</script>
+<style>
+  .checklist { max-width: 850px; padding-bottom: 80px; }
+  #progress { font-family: var(--font-mono); font-size: 12px; margin-bottom: 30px; }
+  .checklist section { border-top: 1px solid var(--color-line); padding-block: 20px; }
+  h2 { font-size: 32px; margin-bottom: 16px; }
+  ul { list-style: none; padding: 0; }
+  .checklist :global(li) { display: flex; align-items: baseline; gap: 16px; margin-block: 14px; }
+  .checklist :global(li label) { display: flex; align-items: baseline; gap: 12px; flex: 1; cursor: pointer; }
+  .checklist :global(input[type="checkbox"]) { accent-color: var(--color-salmon-deep); width: 18px; height: 18px; flex-shrink: 0; }
+  .checklist :global(input:checked + span) { text-decoration: line-through; color: var(--color-muted); }
+  .add-row { display: flex; gap: 10px; margin-top: 10px; }
+  #task-text { width: 100%; min-width: 0; padding: 12px; border: 1px solid var(--color-line); background: var(--color-bg); }
+  .checklist :global(button) { padding: 9px 14px; border: 1px solid var(--color-line); cursor: pointer; background: var(--color-surface); color: var(--color-ink); }
+  .checklist :global(button:hover) { background: var(--color-salmon); }
+  .reference-documents { max-width: 1000px; padding-bottom: 80px; }
+  .reference-documents > p { color: var(--color-muted); margin-bottom: 24px; }
+  details { border-top: 1px solid var(--color-line); padding-block: 20px; }
+  summary { cursor: pointer; font-size: 20px; }
+  summary .eyebrow { display: block; margin: 8px 0 0 20px; color: var(--color-muted); overflow-wrap: anywhere; }
+  .document-body { max-width: none; padding-top: 30px; overflow-wrap: anywhere; }
+  .document-body :global(table) { display: block; overflow-x: auto; border-collapse: collapse; margin-block: 24px; }
+  .document-body :global(th), .document-body :global(td) { border: 1px solid var(--color-line); padding: 10px; text-align: left; min-width: 150px; }
+</style>

@@ -7,7 +7,7 @@ tags:
 date: 2024-07-02
 ---
  hermeto amen samples Hermeto Pascoal playing water jugs in water with some other men.
-![](../../../public/attachments/Screenshot-2024-06-20-at-23.47.41.png)
+![](../../../public/attachments/Screenshot-2024-06-20-at-23.47.41.avif)
 <iframe style="border: 0; width: 350px; height: 442px;" src="https://bandcamp.com/EmbeddedPlayer/track=244297502/size=large/bgcol=ffffff/linkcol=63b2cc/tracklist=false/transparent=true/" seamless><a href="https://cuppanoodle.bandcamp.com/track/hermeto-amen">hermeto amen by cuppanoodle</a></iframe>
 
 

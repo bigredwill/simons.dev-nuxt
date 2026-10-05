@@ -15,4 +15,4 @@ https://agartha.one
 - React, MapBox, Notion
 
 
-![](../../public/attachments/Screenshot-2024-06-09-at-10.22.15-Large.jpeg)
+![](../../public/attachments/Screenshot-2024-06-09-at-10.22.15-Large.avif)

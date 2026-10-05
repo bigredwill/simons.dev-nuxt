@@ -2,7 +2,7 @@
 title: Build on the Block - Jumbotron
 date: 2023-07-22
 featured: true
-image: /attachments/Pasted-image-20240302074102.png
+image: /attachments/Pasted-image-20240302074102.avif
 description: A single page scoreboard for the Build on the Block 2023 contest put on by 35th North skateshop in Seattle, WA. Built to be displayed on a ~50inch tv monitor outside.
 ---
 - **Code**: https://github.com/bigredwill/build-on-the-block
@@ -15,7 +15,7 @@ An example of [home cooked software.](https://maggieappleton.com/home-cooked-sof
 
 I was also commissioned to build a ramp for By And By - [Build on the Block - Wedge Ramp](Build%20on%20the%20Block%20-%20Wedge%20Ramp.md)
 
-![](../../public/attachments/Pasted-image-20240302074102.png)
+![](../../public/attachments/Pasted-image-20240302074102.avif)
 
 
 ## Tech Overview
@@ -25,10 +25,10 @@ This is a Preact single page app (See [/src/pages/Home.jsx](https://github.com/b
 Using [preact-cli](https://github.com/preactjs/preact-cli), with [vercel cli](https://vercel.com/docs/cli), the app was deployed and ready to go. 10/10 would use this setup again.
 
 ## Contest Photos
-![](../../public/attachments/build-on-the-block-poster.png)
+![](../../public/attachments/build-on-the-block-poster.avif)
 
-![](../../public/attachments/Pasted-image-20240302075331.png)
-![](../../public/attachments/ADD3A9F7-CE04-49D8-8064-04A27F0F12A6_1_105_c.jpeg)![](../../public/attachments/B2CEC50D-D5CE-4661-B43E-991F9DE8AC6E_1_105_c.jpeg)
+![](../../public/attachments/Pasted-image-20240302075331.avif)
+![](../../public/attachments/ADD3A9F7-CE04-49D8-8064-04A27F0F12A6_1_105_c.avif)![](../../public/attachments/B2CEC50D-D5CE-4661-B43E-991F9DE8AC6E_1_105_c.avif)
 
 ### Instagram Post
 https://www.instagram.com/p/CvLCK9UPG3P/

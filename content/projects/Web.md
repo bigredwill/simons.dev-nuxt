@@ -1,6 +1,6 @@
 ---
 date: 2025-06-01
-image: /attachments/6367CACB-52AC-4B22-8E86-093A3EE501A6_1_105_c.jpeg
+image: /attachments/6367CACB-52AC-4B22-8E86-093A3EE501A6_1_105_c.avif
 featured: false
 description:
 ---

@@ -1,0 +1,15 @@
+---
+import { works } from "../data/studio";
+interface Props { limit?: number }
+const selected = works.slice(0, Astro.props.limit ?? works.length);
+---
+<div class="work-grid">
+  {selected.map((work, index) => (
+    <a class="work-card" href={work.href}>
+      <div class="work-image"><img src={work.image} alt={work.title} loading="lazy" decoding="async" /></div>
+      <div class="work-meta"><span>{String(index + 1).padStart(2, "0")} / {work.kind}</span><span>{work.year}</span></div>
+      <h3>{work.title}<span aria-hidden="true">↗</span></h3>
+      <p>{work.description}</p>
+    </a>
+  ))}
+</div>

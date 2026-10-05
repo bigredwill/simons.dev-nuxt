@@ -1,0 +1,9 @@
+---
+const links = [{ href: "/work", label: "Work" }, { href: "/studio", label: "Studio" }, { href: "/notes", label: "Notes" }];
+if (import.meta.env.DEV) links.push({ href: "/admin", label: "Admin" });
+const current = Astro.url.pathname.replace(/\/$/, "");
+---
+<header class="studio-header shell">
+  <a class="studio-wordmark" href="/" aria-label="Simons Development Labs home"><img class="studio-logo" src="/img/salmon-icon.svg" alt="" width="64" height="64" /><span>Simons<br />Development Labs</span></a>
+  <nav aria-label="Main navigation"><ul>{links.map(({href,label}) => <li><a href={href} aria-current={current === href || current.startsWith(`${href}/`) ? "page" : undefined}>{label}</a></li>)}<li><button id="theme-toggle" class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" hidden>☾ Dark</button></li></ul></nav>
+</header>

@@ -2,7 +2,7 @@
 date: 2024-09-30
 featured: true
 description: Hacking on OSC.LINK, a control interface for realtime interaction between a mobile or desktop browser, and the OSC protocol.
-image: /attachments/osc-link-image.png
+image: /attachments/osc-link-image.avif
 ---
 Hacking on [osc.link](https://osc.link).  
 
@@ -27,4 +27,4 @@ Github Repository: https://github.com/laubsauger/osc.link.
 - Added Clerk for authentication and updated UI to account for private sessions.
 
 
-![](../../public/attachments/osc-link-image.png)
+![](../../public/attachments/osc-link-image.avif)

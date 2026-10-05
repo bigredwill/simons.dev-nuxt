@@ -1,12 +1,7 @@
 ---
-date: 2024-05-30
-url: https://www.mars.college/
-featured: false
+title: Mars College
 ---
 
->Mars College is a three-month educational program, R&D lab, and off-grid residential community dedicated to cultivating a low-cost, high-tech lifestyle.
+Mars College is an off-grid, high-tech, low-cost popup college in Bombay Beach, California. I spent four winters there, working across code, light, sculpture, and video while living and building alongside other creative people.
 
-
-
-A screenshot from the recorded Thunder Talks; Sophia talking about the importance of play.
-![](../../public/attachments/Screenshot-2024-03-06-at-21.13.04.png)
+Work from that time includes [LP–01](/projects/lp-01), a light made from a found desert post; [Train Otaku](/projects/train-otaku), a video of passing freight trains; and [Nice Piles](/projects/zine-nice-piles), a photographic zine.
