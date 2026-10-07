@@ -1,7 +1,7 @@
 ---
 title: skateboard.fyi
 url: https://skateboard.fyi
-description: An independent archive and research platform for skateboard print culture, founded and built by Will Simons.
+description: An independent archive and research platform for skateboard print culture,
 ---
 
 I'm the solo founder of skateboard.fyi, an independent archive and research platform for skateboard print culture. I started the project in 2025 and began physical archival work in December that year.
@@ -18,7 +18,7 @@ That question grew into a broader one: how can we explore the people, images, pl
 
 The published archive includes 281 issues and more than 15,000 pages as of October 2026. Readers can browse magazines, search their text, and explore records of people, brands, tricks, and spots.
 
-I develop the platform and its ingestion tools: local OCR, image processing, storage, database indexing, and publication. The current site uses Astro, Preact, TypeScript, Turso/libSQL, Drizzle, and Cloudflare Workers and R2. Local OCR tooling uses Swift and Apple Vision.
+I am developing the platform and its ingestion tools: local OCR, image processing, storage, database indexing, and publication. The current site uses Astro, Preact, TypeScript, Turso/libSQL, Drizzle, and Cloudflare Workers and R2. Local OCR tooling uses Swift and Apple Vision.
 
 ## From paper to a research tool
 
