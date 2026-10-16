@@ -1,10 +1,10 @@
 ---
 import { getCollection, render } from "astro:content";
 import Layout from "../layouts/Layout.astro";
-import { entryTitle, formatDate } from "../lib/entries";
+import { entryTitle, formatDate, isPublished } from "../lib/entries";
 
 export async function getStaticPaths() {
-  const entries = await getCollection("content");
+  const entries = await getCollection("content", isPublished);
   return entries
     .filter((entry) => entry.id !== "index" && entry.id !== "projects")
     .map((entry) => ({
@@ -19,10 +19,18 @@ const { Content } = await render(entry);
 const title = entryTitle(entry);
 const date = formatDate(entry.data.date);
 const url = entry.data.url;
+const isProject = entry.id.startsWith("projects/");
+const collectionHref = isProject ? "/" : "/notes";
+const related = (await getCollection("content", item => isPublished(item) && item.id !== entry.id && item.id.startsWith(isProject ? "projects/" : "posts/")))
+  .sort((a, b) => {
+    const score = (item: typeof a) => (item.data.tags ?? []).filter(tag => (entry.data.tags ?? []).includes(tag)).length;
+    return score(b) - score(a) || (b.data.date?.getTime() ?? 0) - (a.data.date?.getTime() ?? 0);
+  }).slice(0, 6);
 ---
 
 <Layout title={title} description={entry.data.description ?? undefined}>
-  <article class="mx-auto w-full max-w-3xl px-4 py-6 sm:px-6">
+  <div class="shell reader-layout"><article class="reader-article">
+    <div class="reader-breadcrumb"><a data-back href={collectionHref}>← back to {isProject ? "index" : "notes"}</a><span>{entry.id}</span></div>
     <h1 class="mb-2 text-2xl sm:text-3xl">{title}</h1>
     {
       (date || url) && (
@@ -46,8 +54,9 @@ const url = entry.data.url;
         </table>
       )
     }
+    {entry.data.tags?.length > 0 && <div class="feed-meta reader-tags">{entry.data.tags.join(" · ")}</div>}
     <div class="prose">
       <Content />
     </div>
-  </article>
+  </article><aside class="reader-related"><span class="eyebrow">Related {isProject ? "projects" : "notes"}</span>{related.map(item => <a href={`/${item.id}`}><span>{entryTitle(item)}</span><small>{formatDate(item.data.date) ?? "From the archive"}</small></a>)}<a class="text-link" href={collectionHref}>Browse all ↗</a></aside></div>
 </Layout>

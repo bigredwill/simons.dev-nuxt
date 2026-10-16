@@ -22,6 +22,8 @@ const content = defineCollection({
         .optional(),
       image: z.string().nullish(),
       featured: z.boolean().optional(),
+      draft: z.boolean().optional(),
+      published: z.union([z.boolean(), z.string()]).optional(),
       url: z.string().optional(),
       location: z.string().optional(),
     })

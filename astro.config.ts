@@ -9,6 +9,7 @@ import { remarkHighlight } from "./src/lib/remark-highlight";
 export default defineConfig({
   site: "https://simons.dev",
   output: "static",
+  redirects: { "/work": "/", "/projects": "/" },
   integrations: [
     preact(),
     {
@@ -17,6 +18,8 @@ export default defineConfig({
         "astro:config:setup": ({ command, injectRoute }) => {
           if (command === "dev") {
             injectRoute({ pattern: "/admin", entrypoint: "./src/dev/Admin.astro" });
+            injectRoute({ pattern: "/admin/resume", entrypoint: "./src/dev/Resume.astro" });
+            injectRoute({ pattern: "/admin/resume.pdf", entrypoint: "./src/dev/resume-pdf.ts" });
           }
         },
       },

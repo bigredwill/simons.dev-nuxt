@@ -1,4 +1,4 @@
-// Update resume content here; /resume uses this for both screen and print.
+// Update resume content here; /admin/resume uses this for both screen and print.
 export const resume = {
   name: "Will Simons",
   title: "Solo Founder & Software Engineer",

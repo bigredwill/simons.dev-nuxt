@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import Nav from "../components/Nav.astro";
+import KeyboardNav from "../components/KeyboardNav.astro";
 
 
 interface Props {
@@ -80,10 +81,12 @@ const pageTitle = title ? `${title} — Simons Development Labs` : "Simons Devel
     <title>{pageTitle}</title>
   </head>
   <body class="bg-bg text-ink font-sans min-h-screen flex flex-col">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <Nav />
-    <main class="flex-1 w-full">
+    <main id="main-content" class="flex-1 w-full">
       <slot />
     </main>
-    <footer class="studio-footer shell"><a href="/">Simons Development Labs</a><span class="eyebrow">An independent practice by Will Simons</span><a href="/resume">Resume ↗</a><a href="mailto:will@simons.dev">Say hello ↗</a></footer>
+    <footer class="studio-footer shell"><a href="/">Simons Development Labs</a><span class="eyebrow">An independent practice by Will Simons</span><a href="mailto:will@simons.dev">Say hello ↗</a></footer>
+    <KeyboardNav />
   </body>
 </html>

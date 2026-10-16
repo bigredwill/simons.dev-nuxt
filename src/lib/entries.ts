@@ -21,3 +21,8 @@ export function formatDate(date: Date | undefined): string | null {
   if (!date) return null;
   return date.toISOString().slice(0, 10);
 }
+
+/** Drafts are excluded from routes, listings, and related entries. */
+export function isPublished(entry: CollectionEntry<"content">): boolean {
+  return entry.data.draft !== true && entry.data.published !== "draft" && entry.data.published !== false;
+}

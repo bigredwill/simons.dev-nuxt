@@ -1,55 +1,31 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import WorkSelection from "../components/WorkSelection.astro";
+import ProjectList from "../components/ProjectList.astro";
+import { getCollection } from "astro:content";
+import { entryTitle, formatDate, isPublished } from "../lib/entries";
+import { toAvif } from "../lib/avif";
+import { works } from "../data/studio";
+const entries = await getCollection("content", entry => isPublished(entry) && entry.id.startsWith("projects/") && (entry.data.featured === true || works.some(work => work.href === `/${entry.id}`)));
+const projects = entries.map(entry => {
+  const selected = works.find(work => work.href === `/${entry.id}`);
+  return {
+    slug: entry.id,
+    title: selected?.title ?? entryTitle(entry),
+    date: selected?.year ?? formatDate(entry.data.date),
+    tags: entry.data.tags ?? [],
+    image: selected?.image ?? (entry.data.image ? toAvif(entry.data.image) : null),
+    description: selected?.description ?? entry.data.description ?? null,
+    selected: Boolean(selected),
+    sortDate: entry.data.date?.getTime() ?? 0,
+  };
+}).sort((a, b) => {
+  const position = (slug: string) => works.findIndex(work => work.href === `/${slug}`);
+  if (a.selected && b.selected) return position(a.slug) - position(b.slug);
+  return Number(b.selected) - Number(a.selected) || b.sortDate - a.sortDate;
+});
+const tags = [...new Set(projects.flatMap(project => project.tags))].sort();
 ---
-
-<Layout description="Simons Development Labs. Objects, software, and experiments by Will Simons.">
-  <section class="studio-hero shell">
-    <div class="eyebrow hero-top">
-      <span>Independent creative practice</span>
-      <span>San Francisco, CA ↙</span>
-    </div>
-    <div class="hero-bottom">
-      <p>
-        Objects, software, and experiments by Will Simons.
-        <br />
-        Solo founder of <a href="/projects/skateboard.fyi">skateboard.fyi</a>,
-        an archive of skateboard print culture.
-      </p>
-      <a class="text-link" href="/studio">
-        Meet the studio ↗
-      </a>
-    </div>
-  </section>
-  <section class="shell selected-section">
-    <div class="section-heading">
-      <h2>Selected work</h2>
-    </div>
-    <WorkSelection limit={4} />
-    <a class="text-link archive-link" href="/work">
-      More from the workbench ↗
-    </a>
-  </section>
-  <section class="studio-update shell">
-    <div>
-      <span class="eyebrow">In the studio / 01</span>
-      <h2>
-        What should
-        <br />I make next?
-      </h2>
-    </div>
-    <div>
-      <p>
-        I’m working through STUDIO WORKS, developing an idea into an object that
-        could help sustain my creative practice.
-      </p>
-      <p>
-        Right now: looking back through experiments, following the ones that
-        still have something to say.
-      </p>
-      <a class="text-link" href="/notes/studio-works">
-        A note from the studio ↗
-      </a>
-    </div>
-  </section>
+<Layout title="Index" description="Simons Development Labs. Objects, software, and experiments by Will Simons.">
+  <section class="shell feed-intro"><div><span class="eyebrow">Independent creative practice / San Francisco</span><h1>Objects, software & loose threads.</h1><p>Will Simons. Maker, software engineer, and solo founder of <a href="/projects/skateboard.fyi">skateboard.fyi</a>.</p></div><a class="text-link" href="/studio">About the studio ↗</a></section>
+  <section class="shell selected-section" aria-labelledby="index-heading"><div class="section-heading"><h2 id="index-heading">Index</h2></div><ProjectList projects={projects} tags={tags} /></section>
 </Layout>

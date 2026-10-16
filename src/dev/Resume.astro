@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import { resume } from "../data/resume";
 ---
 <Layout title="Will Simons — Resume" description="Will Simons, solo founder and software engineer. Experience, selected work, and a printable one-page resume.">
-  <div class="resume-controls shell"><a href="/studio">← Studio</a><a href="/resume/will-simons-resume.pdf" download>Download PDF ↓</a><button id="print-resume" type="button" hidden>Print / Save PDF ↗</button><p>One-page layout for Letter or A4. Turn off browser headers and footers when printing.</p></div>
+  <div class="resume-controls shell"><a href="/admin">← Admin</a><a href="/admin/resume.pdf" download>Download PDF ↓</a><button id="print-resume" type="button" hidden>Print / Save PDF ↗</button><p>One-page layout for Letter or A4. Turn off browser headers and footers when printing.</p></div>
   <article class="resume-sheet">
     <header class="resume-heading"><h1>{resume.name}</h1><p class="resume-title">{resume.title}</p><p class="resume-contact">{resume.location} · <a href={`mailto:${resume.email}`}>{resume.email}</a> · <a href="https://simons.dev">simons.dev</a> · <a href="https://github.com/bigredwill">github.com/bigredwill</a></p></header>
     <p class="resume-summary">{resume.summary}</p>
@@ -39,7 +39,7 @@ import { resume } from "../data/resume";
   @media print {
     @page { size: auto; margin: 12mm; }
     :global(html), :global(body) { background: white !important; color: #161616 !important; min-height: 0 !important; color-scheme: light; }
-    :global(.studio-header), :global(.studio-footer), .resume-controls { display: none !important; }
+    :global(.studio-header), :global(.studio-footer), :global(.keyboard-bar), .resume-controls { display: none !important; }
     :global(main) { flex: none !important; }
     .resume-sheet { max-width: none; margin: 0; padding: 0; border: 0; background: white; color: #161616; font-size: 10pt; line-height: 1.3; }
     .resume-sheet h1, .resume-sheet h2, .resume-sheet h3 { color: #161616; }

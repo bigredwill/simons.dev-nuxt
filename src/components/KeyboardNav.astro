@@ -1,0 +1,36 @@
+<div class="keyboard-bar"><span><kbd>j</kbd>/<kbd>k</kbd> move · <kbd>↵</kbd> open · <kbd>g</kbd> then <kbd>i</kbd> index / <kbd>n</kbd> notes / <kbd>s</kbd> studio</span><button type="button" data-help> ? <span>help</span></button></div>
+<dialog id="keyboard-help"><div class="help-heading"><h2>Find your way.</h2><button type="button" data-close-help aria-label="Close keyboard help">×</button></div><p>Use Tab to reach any link or control.</p><dl><dt>j / ↓</dt><dd>Next entry</dd><dt>k / ↑</dt><dd>Previous entry</dd><dt>Enter</dt><dd>Open focused entry</dd><dt>g then i / n / s</dt><dd>Index / notes / studio</dd><dt>Escape</dt><dd>Close help or return to collection</dd><dt>?</dt><dd>Keyboard shortcuts</dd></dl></dialog>
+<script>
+  const help = document.querySelector<HTMLDialogElement>('#keyboard-help')!;
+  document.querySelector('[data-help]')?.addEventListener('click', () => help.showModal());
+  document.querySelector('[data-close-help]')?.addEventListener('click', () => help.close());
+  help.addEventListener('click', e => { if (e.target === help && (e.clientX < help.getBoundingClientRect().left || e.clientX > help.getBoundingClientRect().right || e.clientY < help.getBoundingClientRect().top || e.clientY > help.getBoundingClientRect().bottom)) help.close(); });
+  let pendingUntil = 0;
+  document.addEventListener('keydown', e => {
+    if (e.defaultPrevented || e.metaKey || e.ctrlKey || e.altKey || e.target instanceof HTMLElement && e.target.closest('input, textarea, select, [contenteditable]:not([contenteditable="false"])')) return;
+    if (help.open) return;
+    if (e.key === '?') { e.preventDefault(); help.showModal(); return; }
+    if (Date.now() < pendingUntil) {
+      pendingUntil = 0;
+      const routes: Record<string, string> = { i: '/', n: '/notes', s: '/studio' };
+      if (routes[e.key]) { e.preventDefault(); location.assign(routes[e.key]); return; }
+    }
+    if (e.key === 'g') { pendingUntil = Date.now() + 1200; return; }
+    if (e.target instanceof HTMLElement && e.target.closest('button, summary, [role="button"]')) return;
+    if (['j', 'k', 'ArrowDown', 'ArrowUp'].includes(e.key)) {
+      const rows = Array.from(document.querySelectorAll<HTMLAnchorElement>('[data-entry]'));
+      if (!rows.length) return;
+      e.preventDefault();
+      const current = rows.findIndex(row => row === document.activeElement);
+      const down = e.key === 'j' || e.key === 'ArrowDown';
+      const next = current < 0 ? (down ? 0 : rows.length - 1) : Math.max(0, Math.min(rows.length - 1, current + (down ? 1 : -1)));
+      rows[next].focus({ preventScroll: true });
+      rows[next].scrollIntoView({ block: 'nearest' });
+    }
+    if (e.key === 'Escape') {
+      const back = document.querySelector<HTMLAnchorElement>('[data-back]');
+      if (back) { e.preventDefault(); location.assign(back.href); }
+      else if (document.activeElement instanceof HTMLElement) document.activeElement.blur();
+    }
+  });
+</script>

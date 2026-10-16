@@ -1,0 +1,86 @@
+---
+interface ProjectItem {
+  slug: string;
+  title: string;
+  date: string | null;
+  tags: string[];
+  image: string | null;
+  description: string | null;
+  selected: boolean;
+}
+interface Props { projects: ProjectItem[]; tags: string[] }
+const { projects, tags } = Astro.props;
+---
+<div data-project-list>
+  <div class="mb-4 flex flex-wrap gap-1.5" role="group" aria-label="Filter projects by tag">
+    <button type="button" data-project-filter="" aria-pressed="true" class="project-filter">All tags</button>
+    {tags.map(tag => <button type="button" data-project-filter={tag} aria-pressed="false" class="project-filter">{tag}</button>)}
+  </div>
+  <p data-project-count role="status" class="mb-3 font-mono text-[10px] text-muted">{projects.length} projects</p>
+  {[{ label: "Selected projects", selected: true }, { label: "All projects", selected: false }].map(group => (
+    <section data-project-group class="project-group" aria-label={group.label}>
+      <h3 class="project-group-heading">{group.label}</h3>
+      <div class="feed-list">
+        {projects.filter(project => project.selected === group.selected).map(project => (
+      <a data-entry data-project-tags={JSON.stringify(project.tags)} class="feed-row" href={`/${project.slug}`}>
+        <div class="feed-thumbnail">{project.image && <img src={project.image} alt="" loading="lazy" decoding="async" />}</div>
+        <div class="feed-copy"><h3>{project.title}</h3><div class="feed-meta">{project.date ?? "Undated"}{project.tags.length > 0 && ` · ${project.tags.join(" · ")}`}</div><p>{project.description ?? "From the project archive."}</p></div>
+        <span class="feed-kind">project ↗</span>
+      </a>
+        ))}
+      </div>
+    </section>
+  ))}
+  <p data-project-empty hidden class="mt-3 text-sm text-muted">No projects match this filter.</p>
+</div>
+<script>
+  for (const list of document.querySelectorAll<HTMLElement>('[data-project-list]')) {
+    const buttons = Array.from(list.querySelectorAll<HTMLButtonElement>('[data-project-filter]'));
+    const rows = Array.from(list.querySelectorAll<HTMLAnchorElement>('[data-project-tags]'));
+    const count = list.querySelector<HTMLElement>('[data-project-count]')!;
+    let tag = '';
+    function apply() {
+      let total = 0;
+      for (const row of rows) {
+        const visible = (!tag || (JSON.parse(row.dataset.projectTags!) as string[]).includes(tag));
+        row.hidden = !visible;
+        row.toggleAttribute('data-entry', visible);
+        if (visible) total++;
+      }
+      for (const button of buttons) button.setAttribute('aria-pressed', String(button.dataset.projectFilter === tag));
+      for (const group of list.querySelectorAll<HTMLElement>('[data-project-group]')) {
+        group.hidden = !Array.from(group.querySelectorAll<HTMLAnchorElement>('[data-project-tags]')).some(row => !row.hidden);
+      }
+      list.querySelector<HTMLElement>('[data-project-empty]')!.hidden = total > 0;
+      count.textContent = `${total} ${total === 1 ? 'project' : 'projects'}${tag ? ` · ${tag}` : ''}`;
+    }
+    function restore() {
+      const params = new URL(location.href).searchParams;
+      const saved = params.get('tag') ?? '';
+      tag = buttons.some(button => button.dataset.projectFilter === saved) ? saved : '';
+      apply();
+    }
+    function save() {
+      const url = new URL(location.href);
+      url.searchParams.delete('view');
+      if (tag) url.searchParams.set('tag', tag);
+      else url.searchParams.delete('tag');
+      history.replaceState(null, '', url);
+      apply();
+    }
+    for (const button of buttons) button.addEventListener('click', () => {
+      tag = button.getAttribute('aria-pressed') === 'true' ? '' : button.dataset.projectFilter!;
+      save();
+    });
+    window.addEventListener('popstate', restore);
+    restore();
+  }
+</script>
+<style>
+  .project-filter { cursor: pointer; border: 1px solid color-mix(in srgb, var(--color-line) 30%, transparent); padding: 4px 10px; font: 10px/1.5 var(--font-mono); text-transform: uppercase; letter-spacing: .1em; color: var(--color-muted); background: transparent; }
+  .project-filter:hover { border-color: var(--color-ink); color: var(--color-ink); }
+  .project-filter[aria-pressed="true"] { border-color: var(--color-ink); background: var(--color-ink); color: var(--color-bg); }
+  .feed-row[hidden], .project-group[hidden] { display: none; }
+  .project-group + .project-group { margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--feed-rule); }
+  .project-group-heading { font: 10px/1.8 var(--font-mono); text-transform: uppercase; letter-spacing: .09em; text-shadow: none; color: var(--color-muted); margin: 0 0 12px; }
+</style>
