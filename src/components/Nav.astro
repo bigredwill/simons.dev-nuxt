@@ -1,5 +1,5 @@
 ---
-const links = [{ href: "/", label: "Index" }, { href: "/notes", label: "Notes" }, { href: "/studio", label: "Studio" }];
+const links = [{ href: "/", label: "Index" }, { href: "/studio", label: "Studio" }];
 if (import.meta.env.DEV) links.push({ href: "/admin", label: "Admin" });
 const current = Astro.url.pathname.replace(/\/$/, "");
 ---

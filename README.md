@@ -43,7 +43,7 @@ Studio journal entries live in `content/notes/` (including `studio-works.md`); o
 
 - `src/lib/remark-vault-links.ts` rewrites Obsidian-style relative `.md` links and `../public` image paths to site routes at build time.
 - `src/lib/slugs.ts` defines the slug rules (lowercase, spaces to dashes) — the same rules the old Nuxt site used, so existing URLs are preserved.
-- Index (the homepage), Notes, and Studio are the primary pages. Index shows selected projects above the rest of the project archive, separated by a divider, with shared tag filters. Both `/work` and `/projects` redirect to `/`. Existing project detail URLs remain available.
+- Index (the homepage) and Studio are the primary navigation items. Notes is temporarily hidden from navigation and keyboard shortcuts; its route and Markdown content are preserved. Index shows selected projects above the rest of the project archive, separated by a divider, with shared tag filters. Both `/work` and `/projects` redirect to `/`. Existing project detail URLs remain available.
 - `/admin/resume` is available only during `astro dev` and renders the founder resume and includes Print / Save PDF. The print layout fits Letter and A4, with browser headers and footers disabled.
 - Edit `src/data/resume.ts` to update the resume. Regenerate `src/dev/assets/will-simons-resume.pdf` after changing it so the download matches the page.
 - `/admin` is injected only during `astro dev`. The checklist, root reference documents, resume page, and resume PDF are excluded from production builds. Access the resume from the admin page; its PDF is served locally at `/admin/resume.pdf`.

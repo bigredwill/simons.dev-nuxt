@@ -1,5 +1,5 @@
-<div class="keyboard-bar"><span><kbd>j</kbd>/<kbd>k</kbd> move · <kbd>↵</kbd> open · <kbd>g</kbd> then <kbd>i</kbd> index / <kbd>n</kbd> notes / <kbd>s</kbd> studio</span><button type="button" data-help> ? <span>help</span></button></div>
-<dialog id="keyboard-help"><div class="help-heading"><h2>Find your way.</h2><button type="button" data-close-help aria-label="Close keyboard help">×</button></div><p>Use Tab to reach any link or control.</p><dl><dt>j / ↓</dt><dd>Next entry</dd><dt>k / ↑</dt><dd>Previous entry</dd><dt>Enter</dt><dd>Open focused entry</dd><dt>g then i / n / s</dt><dd>Index / notes / studio</dd><dt>Escape</dt><dd>Close help or return to collection</dd><dt>?</dt><dd>Keyboard shortcuts</dd></dl></dialog>
+<div class="keyboard-bar"><span><kbd>j</kbd>/<kbd>k</kbd> move · <kbd>↵</kbd> open · <kbd>g</kbd> then <kbd>i</kbd> index / <kbd>s</kbd> studio</span><button type="button" data-help> ? <span>help</span></button></div>
+<dialog id="keyboard-help"><div class="help-heading"><h2>Find your way.</h2><button type="button" data-close-help aria-label="Close keyboard help">×</button></div><p>Use Tab to reach any link or control.</p><dl><dt>j / ↓</dt><dd>Next entry</dd><dt>k / ↑</dt><dd>Previous entry</dd><dt>Enter</dt><dd>Open focused entry</dd><dt>g then i / s</dt><dd>Index / studio</dd><dt>Escape</dt><dd>Close help or return to collection</dd><dt>?</dt><dd>Keyboard shortcuts</dd></dl></dialog>
 <script>
   const help = document.querySelector<HTMLDialogElement>('#keyboard-help')!;
   document.querySelector('[data-help]')?.addEventListener('click', () => help.showModal());
@@ -12,7 +12,7 @@
     if (e.key === '?') { e.preventDefault(); help.showModal(); return; }
     if (Date.now() < pendingUntil) {
       pendingUntil = 0;
-      const routes: Record<string, string> = { i: '/', n: '/notes', s: '/studio' };
+      const routes: Record<string, string> = { i: '/', s: '/studio' };
       if (routes[e.key]) { e.preventDefault(); location.assign(routes[e.key]); return; }
     }
     if (e.key === 'g') { pendingUntil = Date.now() + 1200; return; }
