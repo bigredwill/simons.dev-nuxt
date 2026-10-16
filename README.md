@@ -23,6 +23,20 @@ pnpm preview
 
 The build outputs static files to `dist/`, ready for Cloudflare Pages (or any static host).
 
+## Editing page text
+
+Edit Markdown in `content/pages/` for the main pages:
+
+- `index.md`: homepage introduction and studio link label.
+- `notes.md`: notes introduction.
+- `studio.md`: studio introduction.
+- `studio-story.md`: studio story, image path, and image alt text.
+- `studio-contact.md`: contact text and links.
+
+Headings, paragraphs, emphasis, and links go in the Markdown body. Metadata such as page titles, descriptions, and eyebrow labels goes in the YAML frontmatter. Layouts and interactive controls stay in `src/`.
+
+Studio journal entries live in `content/notes/` (including `studio-works.md`); older notes remain in `content/posts/`. Published entries appear in Notes automatically. Project articles remain in `content/projects/`. Page copy is a separate collection and does not generate extra article URLs.
+
 ## Notes
 
 - Set `published: draft` (or `draft: true`) in frontmatter to exclude an entry from generated pages, listings, and related links.

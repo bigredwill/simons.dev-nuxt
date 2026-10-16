@@ -452,3 +452,6 @@ dialog dd { margin: 0; }
   .keyboard-bar > span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .keyboard-bar button { flex-shrink: 0; }
 }
+
+/* Markdown emits em for editorial emphasis, matching the studio headings. */
+.page-intro h1 em { font-style: normal; color: var(--heading-color, var(--color-salmon-deep)); text-shadow: var(--heading-em-shadow, none); }

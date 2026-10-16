@@ -21,7 +21,7 @@ const date = formatDate(entry.data.date);
 const url = entry.data.url;
 const isProject = entry.id.startsWith("projects/");
 const collectionHref = isProject ? "/" : "/notes";
-const related = (await getCollection("content", item => isPublished(item) && item.id !== entry.id && item.id.startsWith(isProject ? "projects/" : "posts/")))
+const related = (await getCollection("content", item => isPublished(item) && item.id !== entry.id && (isProject ? item.id.startsWith("projects/") : item.id.startsWith("posts/") || item.id.startsWith("notes/"))))
   .sort((a, b) => {
     const score = (item: typeof a) => (item.data.tags ?? []).filter(tag => (entry.data.tags ?? []).includes(tag)).length;
     return score(b) - score(a) || (b.data.date?.getTime() ?? 0) - (a.data.date?.getTime() ?? 0);
@@ -29,7 +29,9 @@ const related = (await getCollection("content", item => isPublished(item) && ite
 ---
 
 <Layout title={title} description={entry.data.description ?? undefined}>
-  <div class="shell reader-layout"><article class="reader-article">
+  {entry.id.startsWith("notes/") ? (
+    <article class="shell journal"><span class="eyebrow">{entry.data.eyebrow}</span><h1>{title}</h1>{entry.data.lead && <p class="journal-lead">{entry.data.lead}</p>}<div class="prose"><Content /></div><a data-back class="text-link" href="/notes">← All notes</a></article>
+  ) : <div class="shell reader-layout"><article class="reader-article">
     <div class="reader-breadcrumb"><a data-back href={collectionHref}>← back to {isProject ? "index" : "notes"}</a><span>{entry.id}</span></div>
     <h1 class="mb-2 text-2xl sm:text-3xl">{title}</h1>
     {
@@ -58,5 +60,5 @@ const related = (await getCollection("content", item => isPublished(item) && ite
     <div class="prose">
       <Content />
     </div>
-  </article><aside class="reader-related"><span class="eyebrow">Related {isProject ? "projects" : "notes"}</span>{related.map(item => <a href={`/${item.id}`}><span>{entryTitle(item)}</span><small>{formatDate(item.data.date) ?? "From the archive"}</small></a>)}<a class="text-link" href={collectionHref}>Browse all ↗</a></aside></div>
+  </article><aside class="reader-related"><span class="eyebrow">Related {isProject ? "projects" : "notes"}</span>{related.map(item => <a href={`/${item.id}`}><span>{entryTitle(item)}</span><small>{formatDate(item.data.date) ?? "From the archive"}</small></a>)}<a class="text-link" href={collectionHref}>Browse all ↗</a></aside></div>}
 </Layout>

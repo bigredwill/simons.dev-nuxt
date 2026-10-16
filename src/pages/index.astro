@@ -1,10 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import ProjectList from "../components/ProjectList.astro";
-import { getCollection } from "astro:content";
+import { getCollection, getEntry, render } from "astro:content";
 import { entryTitle, formatDate, isPublished } from "../lib/entries";
 import { toAvif } from "../lib/avif";
 import { works } from "../data/studio";
+const page = (await getEntry("pages", "index"))!;
+const { Content } = await render(page);
 const entries = await getCollection("content", entry => isPublished(entry) && entry.id.startsWith("projects/") && (entry.data.featured === true || works.some(work => work.href === `/${entry.id}`)));
 const projects = entries.map(entry => {
   const selected = works.find(work => work.href === `/${entry.id}`);
@@ -25,7 +27,7 @@ const projects = entries.map(entry => {
 });
 const tags = [...new Set(projects.flatMap(project => project.tags))].sort();
 ---
-<Layout title="Index" description="Simons Development Labs. Objects, software, and experiments by Will Simons.">
-  <section class="shell feed-intro"><div><span class="eyebrow">Independent creative practice / San Francisco</span><h1>Objects, software & loose threads.</h1><p>Will Simons. Maker, software engineer, and solo founder of <a href="/projects/skateboard.fyi">skateboard.fyi</a>.</p></div><a class="text-link" href="/studio">About the studio ↗</a></section>
+<Layout title={page.data.title} description={page.data.description}>
+  <section class="shell feed-intro"><div><span class="eyebrow">{page.data.eyebrow}</span><Content /></div><a class="text-link" href="/studio">{page.data.studioLink}</a></section>
   <section class="shell selected-section" aria-labelledby="index-heading"><div class="section-heading"><h2 id="index-heading">Index</h2></div><ProjectList projects={projects} tags={tags} /></section>
 </Layout>
